@@ -6,17 +6,17 @@
     <link rel="stylesheet" href="/src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <title>Shannon - Home</title>
+    <title>ELNTECH - Home</title>
   </head>
   <body>
   <!-- NAV BAR -->
   <section class="main-menu">
-<nav class="navbar border-b-blue border-b-4">
-<div class="nav-section flex items-center mx-10">
+<nav class="navbar border-b-darkBlue border-b-4">
+<div class="nav-section flex items-center justify-between w-[95%] mx-auto">
    <!-- LOGO -->
    <div class=" logo pt-0">
        <a href="/">
-           <img src="images/shannon_logo.svg" alt="Shannon Logo" width="400" height="200">
+           <img src="images/audi-1.svg" alt="Shannon Logo" width="400" height="200">
        </a>
    </div>
 
@@ -28,7 +28,7 @@
    </btn>
 
  <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
-<div class="hidden lg:flex md:items-center lg:gap-24 md:gap-12 ml-auto mr-10 uppercase font-poppins-light text-blue text-xl">
+<div class="hidden lg:flex md:items-center lg:gap-24 md:gap-12 ml-auto mr-10 uppercase font-poppins-light text-darkBlue text-xl">
   <ul class="flex space-x-20">
     <li class="menu-items hover:text-green"><a href="/#about">About</a></li>
     <li class="menu-items hover:text-green"><a href="/#services">Services</a></li>
@@ -37,18 +37,10 @@
     <li class="menu-items hover:text-green"><a href="/#contact">Contact</a></li>
   </ul>
 </div>
-
-   <!-- linkedin icon -->
-   <div class="social-icon w-[36px] transition-transform duration-300 ease-in-out transform hover:scale-110 hover:fill-red-500">
-    <a href="https://linkedin.com" target="_blank">
-      <img src="images/icon-linkedin.svg" alt="" class="transition-colors duration-300 ease-in-out hover:fill-red-500">
-    </a>
-  </div>
-  
 </div>
 
 <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
-<div id="mobile_menu" class="w-full space-y-20 uppercase font-semibold font-poppins-light text-lg z-10 text-white text-left py-6 bg-blue top-20 lg:hidden">
+<div id="mobile_menu" class="w-full space-y-20 uppercase font-semibold font-poppins-light text-lg z-10 text-white text-left py-6 bg-darkBlue top-20 lg:hidden">
  <ul class="space-y-8">
   <li class="menu-items"><a href="/#about">About</a></li>
     <li class="menu-items"><a href="/#services">Services</a></li>
@@ -62,261 +54,276 @@
 </section>
  
 <!-- HOME SLIDER SECTION -->
- <section class="home-slider my-8">
-  <div class="grid grid-cols-1 md:grid-cols-2">
-    <div class="slider-section">
-      <div class="carousel" data-flickity='{"autoPlay": 2000, "pageDots": false, "prevNextButtons": false, "fade": true, "imagesLoaded": true}'>
-      <div class="carousel-cell">
-          <img src="images/renewable-1.jpg" class="carousel-cell-image md:rounded-tr-[120px] md:rounded-br-[120px] lazyload visi" alt=""/>
-      </div>
-      <div class="carousel-cell">
-        <img src="images/renewable-2.jpg" class="carousel-cell-image md:rounded-tr-[120px] md:rounded-br-[120px] lazyload visi" alt=""/>
-    </div>
+ <section class="home-slider">
+ <div class="home-slider">
+  <div id="homeCarousel" class="home-carousel" data-flickity='{ "wrapAround": true, "autoPlay": 1500, "pauseAutoPlayOnHover": false, "prevNextButtons": false }'>
+  <div class="home-carousel-cell">
+    <img src="images/banner-1.jpg" alt="banner-1">
   </div>
-    </div>
-    <div class="text-section flex flex-col justify-center pl-5">
-      <div class="heading">
-        <h2 class="text-3xl font-poppins-medium text-green pb-5">Slider Heading</h2>
-        <p class="text-xl font-poppins-light pr-[7%]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus minima ipsum nesciunt, nobis alias vitae numquam quia laudantium! Ratione, ea? sit amet consectetur, adipisicing elit. Doloribus minima</p>
-      </div>
-    </div>
+  <div class="home-carousel-cell">
+    <img src="images/banner-2.jpg" alt="banner-2">
   </div>
+</div>
+ </div>
  </section>
 
  <!-- About Section -->
 
- <section class="about-section py-8" id="about">
-  <div class="about flex flex-col md:flex-row items-center justify-between gap-6 text-center container mx-auto w-[65%]">
-    <div class="profile-icon">
-      <a href="/about.html#profile">
-        <img src="images/profile.png" alt="icon-about">
-       <div class="profile-title">
-         <h3 class="text-blue text-3xl font-poppins-medium pt-6">Profile</h3>
-       </div>
-     </a>
+ <section class="about-section my-8">
+  <div class="w-[98%] m-auto">
+    <div class="about-content px-48">
+    <div class="about-title">
+      <h2 class="text-4xl text-darkBlue">Lorem About</h2>
     </div>
-    <div class="profile-icon">
-      <a href="/about.html#team">
-        <img src="images/team.png" alt="icon-team">
-       <div class="team-title">
-         <h3 class="text-blue text-3xl font-poppins-medium pt-6">Team</h3>
-       </div>
-     </a>
+    <div class="about-subheading">
+      <h3 class="text-xl text-red pt-2">Lorem ipsum dolor sit amet.</h3>
     </div>
-    <div class="profile-icon">
-      <a href="/about.html#testimonial">
-        <img src="images/testimonial.png" alt="icon-testimonial">
-       <div class="testimonial-title">
-         <h3 class="text-blue text-3xl font-poppins-medium pt-6">Testimonial</h3>
-       </div>
-     </a>
+    <div class="about-text">
+      <p class="text-darkBlue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita culpa ab veritatis unde earum tenetur quod nostrum rem odio velit aut repellendus suscipit dolores optio, voluptate perspiciatis sunt dolor assumenda nobis doloribus mollitia ipsam iusto. Assumenda soluta itaque accusantium, minus, culpa quisquam architecto quas natus cupiditate aspernatur ipsam ea provident?</p>
     </div>
- </div>
+    <div class="about-buttons flex items-center justify-start space-x-4 py-5">
+    <div class="read-more font-poppins-light">
+      <button><span>READ MORE</span></button>
+    </div>
+    <div class="quote-button font-poppins-light">
+      <button>Lorem Quote</button>
+    </div>
+  </div>
+  </div>
+  </div>
  </section>
 
  <!-- SERVICES SECTION -->
-
- <section class="services my-5" id="services">
-  <div class="services-section grid grid-cols-1 md:grid-cols-2 container mx-auto">
-    <div class="services-image">
-      <img src="images/services-featured.jpg" alt="services-featured" class="md:rounded-tl-[120px] md:rounded-bl-[120px]">
+<section class="services-section bg-blue py-20">
+  <div class="w-[98%] m-auto">
+    <div class="services-title">
+      <h2 class="text-center text-4xl text-white pb-8">Lorem Ipsum Heading</h2>
     </div>
-    <div class="sevices-catergories flex flex-1 items-center shadow-custom-inset bg-bgGrey pl-5 md:mr-[-18%]">
-      <div class="services-title">
-        <h2 class="text-3xl uppercase text-blue font-poppins-medium pb-5">Services</h2>
-      <div class="services-items">
-        <ul class="space-y-6  text-blue font-poppins-light text-2xl">
-        <li>
-          <div class="services-title flex items-center">
-            <img src="images/list-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-            <a href="/services.html#executive-search"  class="hover:underline">Executive Search</a>
-          </div>
-        </li>
-        <li>
-          <div class="services-title flex items-center">
-            <img src="images/list-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-            <a href="/services.html#executive" class="hover:underline">Executive</a>
-          </div>
-        </li>
-        <li>
-          <div class="services-title flex items-center">
-            <img src="images/list-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-            <a href="/services.html#talent-acquisition" class="hover:underline">Talent Acquisition & Management</a>
-          </div>
-        </li>
-        <li>
-          <div class="services-title flex items-center">
-            <img src="images/list-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-            <a href="/services.html#consulting" class="hover:underline">Consulting</a>
-          </div>
-        </li>
-        <li>
-          <div class="services-title flex items-center">
-            <img src="images/list-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-            <a href="/services.html#project-management" class="hover:underline">Project Management</a>
-          </div>
-        </li>
-      </ul>
-    </div>
+   <!-- From Uiverse.io by SouravBandyopadhyay --> 
+  <div class="services-card">
+   <div class="grid grid-cols-4 justify-items-center">
+ <div class="card">
+  <p class="card-title">Product Name</p>
+  <p class="small-desc">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+    veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio
+    officia deleniti. Expedita iste et illum, quaerat pariatur consequatur
+    eum nihil itaque!
+  </p>
+  <div class="go-corner">
+    <div class="go-arrow">→</div>
   </div>
+</div>
+ <div class="card">
+  <p class="card-title">Product Name</p>
+  <p class="small-desc">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+    veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio
+    officia deleniti. Expedita iste et illum, quaerat pariatur consequatur
+    eum nihil itaque veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio officia deleniti. Expedita iste et illum, quaerat pariatur consequatur
+    eum nihil itaque!!
+  </p>
+  <div class="go-corner">
+    <div class="go-arrow">→</div>
+  </div>
+</div>
+ <div class="card">
+  <p class="card-title">Product Name</p>
+  <p class="small-desc">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+    veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio
+    officia deleniti. Expedita iste et illum, quaerat pariatur consequatur
+    eum nihil itaque!
+  </p>
+  <div class="go-corner">
+    <div class="go-arrow">→</div>
+  </div>
+</div>
+ <div class="card">
+  <p class="card-title">Product Name</p>
+  <p class="small-desc">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+    veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio
+    officia deleniti. Expedita iste et illum, quaerat pariatur consequatur
+    eum nihil itaque!
+  </p>
+  <div class="go-corner">
+    <div class="go-arrow">→</div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION 2 -->
+ <section class="services-2 my-8">
+  <div class="w-[98%] m-auto">
+    <div class="grid-cols">
+      <div class="grid grid-cols-3 justify-items-center space-x-8 px-48">
+        <div class="col-1">
+          <!-- From Uiverse.io by alexruix --> 
+            <div class="service-card">
+              <div class="service-card-details">
+                <p class="text-title">Card title</p>
+                <p class="text-body">Here are the details of the card</p>
+              </div>
+              <button class="service-card-button">More info</button>
+            </div>
+        </div>
+        <div class="col-2">
+          <!-- From Uiverse.io by alexruix --> 
+            <div class="service-card">
+              <div class="service-card-details">
+                <p class="text-title">Card title</p>
+                <p class="text-body">Here are the details of the card</p>
+              </div>
+              <button class="service-card-button">More info</button>
+            </div>
+        </div>
+        <div class="col-2">
+          <!-- From Uiverse.io by alexruix --> 
+            <div class="service-card">
+              <div class="service-card-details">
+                <p class="text-title">Card title</p>
+                <p class="text-body">Here are the details of the card</p>
+              </div>
+              <button class="service-card-button">More info</button>
+            </div>
+        </div>
+
+      </div>
     </div>
   </div>
  </section>
 
- <!-- SECTORS -->
-
-
-
- <!-- ARTICLES -->
-  <section class="articles" id="articles">
-    <div class="articles-heading">
-      <h2 class="text-blue font-poppins-medium text-3xl uppercase text-center py-9">Articles</h2>
-    </div>
-    <div class="articles-container w-[90%] mx-auto shadow-custom-inset-2 bg-lightGrey rounded-3xl pb-[35px]">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-24 p-12">
-      <div class="col-1 p-10 border-2 border-green rounded-[40px] shadow-2xl">
-        <img src="images/articles-icon.svg" alt="">
-        <h3 class="font-poppins-regular text-3xl text-blue pt-7">Post 1</h3>
-        <p class="py-5 font-poppins-light text-black text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis excepturi quidem fuga, hic quam, laboriosam temporibus neque dolor, perferendis voluptates magni eligendi error voluptatibus. ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis excepturi quidem fuga, hic quam, labori</p>
-        <div class="articles-bttn w-[170px] mx-auto">
-          <button> <span>Read More</span>
-        </button>
-      </div>
-      </div>
-      <div class="col-1 p-10 border-2 border-green rounded-[40px] shadow-2xl">
-        <img src="images/articles-icon.svg" alt="">
-        <h3 class="font-poppins-regular text-3xl text-blue pt-7">Post 1</h3>
-        <p class="py-5 font-poppins-light text-black text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis excepturi quidem fuga, hic quam, laboriosam temporibus neque dolor, perferendis voluptates magni eligendi error voluptatibus. ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis excepturi quidem fuga, hic quam, labori</p>
-        <div class="articles-bttn w-[170px] mx-auto">
-          <button> <span>Read More</span>
-        </button>
-      </div>
-      </div>
-    </div>
-    <div class="see-all flex items-center justify-center uppercase text-xl font-poppins-light text-green p-[10px_0] rounded-[10px] w-[120px] mx-auto border-2 border-green transition ease-in-out duration-700 transform hover:scale-110">
-      <a href="/articles.html">See All</a>
-    </div>
-  </div>
-  </section>
-
-  <!-- FOOTER SECTION -->
-  <section class="fotter-section">
-    <div class="footer-heading" id="contact">
-      <h2 class="text-blue font-poppins-medium text-3xl text-center uppercase py-7">Contact</h2>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2">
-      <div class="footer-menu flex flex-col md:flex-row md:items-center gap-8  text-white bg-blue font-poppins-light text-2xl py-[15%] md:rounded-tr-[70px] md:rounded-br-[70px] px-10">
-        <ul class="nav-links space-y-4 md:px-24">
-          <li>
-            <div class="menu-title flex items-center">
-              <img src="images/list-white-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-              <a href="/about.html" class="hover:underline">About</a>
-            </div>
-          </li>
-          <li>
-            <div class="menu-title flex items-center">
-              <img src="images/list-white-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-              <a href="/services.html" class="hover:underline">Services</a>
-            </div>
-          </li>
-          <li>
-            <div class="menu-title flex items-center">
-              <img src="images/list-white-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-              <a href="/sectors.html" class="hover:underline">Sectors</a>
-            </div>
-          </li>
-          <li>
-            <div class="menu-title flex items-center">
-              <img src="images/list-white-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-              <a href="/articles.html" class="hover:underline">Articles</a>
-            </div>
-          </li>
-          <li>
-            <div class="menu-title flex items-center">
-              <img src="images/list-white-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-              <a href="/contact.html" class="hover:underline">Contact</a>
-            </div>
-          </li>
-        </ul>
-        <ul class="contacts space-y-4">
-          <li>
-            <div class="menu-title flex items-center">
-              <img src="images/list-white-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-              <a href="mailto:info@example.com">info@example.com</a>
-            </div>
-          </li>
-          <li>
-            <div class="menu-title flex items-center">
-              <img src="images/list-white-icon.svg" alt="list-icon" class="w-[32px] h-[25px]">
-              <a href="tel:+27 12 345 6789">+27 12 345 6789</a>
-            </div>
-          </li>
-            <!-- linkedin icon -->
-   <div class="social-icon w-[60px] transition-transform duration-300 ease-in-out transform hover:scale-110 mx-auto">
-    <a href="https://linkedin.com" target="_blank">
-      <img src="images/icon-linkedin-white.svg" alt="" class="transition-colors duration-300 ease-in-out">
-    </a>
-  </div>
-        </ul>
-      </div>
-
-      <!-- CONTACT FORM -->
-      <div class=" w-full">
-        <div class="py-10 mx-8 md:mx-0 sm:p-10">
-          <div class="text-white">
-          <div>
-                <label
-                  class="text-xl text-blue pb-1 block font-poppins-light"
-                  for="fullname"
-                  >Full Name</label
-                >
-                <input
-                  class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full text-white focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                  type="text"
-                />
-              </div>
-            <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-5">
-              <div>
-                <label
-                  class="text-xl text-blue pb-1 block font-poppins-light"
-                  >Contact Number</label>
-                <input
-                  class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full text-white focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                  type="text"/>
-              </div>
-              <div>
-                <label
-                  class="text-xl text-blue pb-1 block font-poppins-light"
-                  >Email Address</label>
-                <input
-                  class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full text-white focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                  type="email"/>
-              </div>
-            </div>
-            
-              <div>
-                <label
-                  class="text-xl text-blue pb-1 block font-poppins-light"
-                  >Message</label>
-                <textarea rows="5"
-                  class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full text-white focus:border-blue-500 focus:ring-2 focus:ring-blue-500 rows-20">
-              </textarea>
-            </div>
-            <div class="mt-5">
-              <a href="#">
-                <bttn
-                class="py-2 px-4 bg-blue text-white text-center text-base rounded-lg"
-                type="submit">
-                Submit
-              </bttn>
-              </a>
+ <!-- CFREATIVITY SECTION -->
+  <section class="creativity my-36">
+    <div class="w-[98%] m-auto">
+      <div class="creativity-cols">
+        <div class="grid grid-cols-2 space-x-8">
+          <div class="col-1">
+            <img src="images/creativity-image.svg" alt="Creativity">
+          </div>
+          <div class="col-2">
+            <h2 class="text-4xl text-darkBlue pb-2">Lorem ipsum dolor sit amet.</h2>
+            <p class="text-darkBlue py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum possimus tempore recusandae veritatis, debitis molestiae non ratione inventore nemo consectetur assumenda nisi qui asperiores impedit quibusdam dolorem, cum dolorum. Quaerat, provident! Cupiditate sed nemo eum ut libero? Harum, ratione? Ad facilis ullam fugiat nobis molestias quibusdam nam nisi ex voluptatum veritatis, debitis molestiae non ratione inventore nemo consectetur assumenda nisi qui asperiores impedit quibusdam dolorem, cum dolorum. Quaerat, provident! Cupiditate sed nemo eum ut libero? Harum, ratione? Ad facilis ullam fugiat nobis molestias quibusdam nam nisi ex voluptatum!
+            </p>
+            <div class="quote-button font-poppins-light">
+              <button>Lorem Quote</button>
             </div>
           </div>
         </div>
       </div>
-      
+    </div>
+  </section>
+
+  <!-- RESPONSIVE DESIGN -->
+   <section class="responsive-design bg-darkBlue py-28">
+    <div class="w-[98%] m-auto">
+      <div class="respnsive-cols grid grid-cols-2 justify-items-center space-x-8">
+        <div class="col-1 flex items-center">
+          <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit dolorum necessitatibus maxime numquam eaque, consequuntur doloribus neque, voluptas quisquam, inventore impedit. Consequuntur accusantium nihil praesentium modi non, necessitatibus tempora quas neque quos. Dolores nisi vel corporis veritatis velit sint provident expedita quia quo? Fugit neque, minima distinctio animi placeat natus?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit dolorum necessitatibus maxime numquam eaque, consequuntur doloribus neque, voluptas quisquam, inventore impedit. Consequuntur accusantium nihil praesentium modi non, necessitatibus tempora quas neque quos. Dolores nisi vel corporis veritatis velit sint provident expedita quia quo? Fugit neque, minima distinctio animi placeat natus?</p>
+        </div>
+        <div class="col-2">
+          <img src="images/web-development.svg" alt="responsive-design">
+        </div>
+      </div>
     </div>
    </section>
+
+ <!-- CHOOSE US ACCORDION -->
+
+ <section class="choose-us-section py-24">
+  <div class="w-[98%] m-auto">
+    <div class="choose-us-colsb grid grid-cols-2 px-36 space-x-8">
+      <div class="choose-us-title">
+        <h2 class="text-darkBlue text-4xl">Why Choose Us</h2>
+        <p class="text-darkBlue py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae natus suscipit accusamus, deleniti laudantium alias nihil modi animi inventore architecto.</p>
+        <div class="quote-button font-poppins-light">
+          <button>Get in Touch</button>
+        </div>
+      </div>
+      <div class="choose-accordion">
+        <!-- From Uiverse.io by SivarajRathinam --> 
+<div class="accordion">
+  <div class="accordion-item">
+    <input type="radio" id="section1" name="accordion" />
+    <label for="section1" class="accordion-header">
+      <label class="accordion-title">Section 1</label>
+      <div class="accordion-icon">
+        <svg
+          viewBox="0 0 16 16"
+          fill="none"
+          height="16"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </label>
+    <div class="content">
+      <p>This is the content for Section 1.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <input checked="" type="radio" id="section2" name="accordion" />
+    <label for="section2" class="accordion-header">
+      <label class="accordion-title">Section 2</label>
+      <div class="accordion-icon">
+        <svg
+          viewBox="0 0 16 16"
+          fill="none"
+          height="16"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </label>
+    <div class="content">
+      <p>This is the content for Section 2.</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <input type="radio" id="section3" name="accordion" />
+    <label for="section3" class="accordion-header">
+      <label class="accordion-title">Section 3</label>
+      <div class="accordion-icon">
+        <svg
+          viewBox="0 0 16 16"
+          fill="none"
+          height="16"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </label>
+    <div class="content">
+      <p>This is the content for Section 3.</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+ </section>
+
 
    <!-- COPYRIGHT FOOTER -->
 <section class="bottom-footer bg-blue text-white h-[50px] flex justify-center items-center mt-7">

@@ -24,17 +24,10 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        blue: '#08265a',
+        blue: '#0000FF',
+        darkBlue: '#08265A',
         green: '#07522c',
-        bgGrey: '#d0d0d04f',
-        lightGrey: '#f4f4f4',
-      },
-      boxShadow: {
-        'custom-inset': 'inset 1px 4px 8px 1px rgba(0, 0, 0, 0.1)', // Services Custom inset box shadow
-        'custom-inset-2': 'inset 1px -1px 5px 1px #0000001a', // Articles Custom inset box shadow
-      },
-      backgroundImage: {
-        'servicesBg': 'linear-gradient(360deg, hsla(0, 2%, 90%, 1) 0%, hsla(60, 100%, 100%, 1) 61%)',
+        red: '#ff0000',
       },
     },
   },
