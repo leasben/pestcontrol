@@ -10,8 +10,7 @@
   --blue: #08265a;
   --green: #07522c;
   --black: #000;
-  --bg-grey: #d0d0d04f;
- 
+  --red: #ff0000; 
 }
 
 * {
@@ -438,8 +437,112 @@ h6 {
   font-weight: bold;
   text-align: left;
 }
-.accordion-header .accordion-title {
-  font-size: 14px;
+
+/* READY TO GET IN TOUCH */
+/* From Uiverse.io by mobinkakei */ 
+.btn {
+  --color1: #1a8516;
+  --color2: #236b19;
+  perspective: 1000px;
+  padding: 1em 1em;
+  background: linear-gradient(var(--color1), var(--color2));
+  border: none;
+  outline: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+  text-shadow: 0 10px 10px #000;
+  cursor: pointer;
+  transform: rotateX(70deg) rotateZ(30deg);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.btn::before {
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-color: var(--color2);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+}
+
+.btn::after {
+  content: "";
+  width: 15px;
+  height: 100%;
+  background-color: var(--color1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotateY(-90deg);
+  transform-origin: right;
+}
+
+.btn:hover {
+  transform: rotateX(30deg) rotateZ(0);
+}
+
+/* ABOUT SECTION */
+ /* about button */
+
+/* From Uiverse.io by adamgiebl */ 
+.about-btn {
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: var(--blue);
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.about-btn span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 2px solid var(--blue);
+}
+
+.about-btn span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+}
+
+.about-btn:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: var(--blue);
+}
+
+.about-btn:hover {
+  color: white;
+}
+
+.about-btn:active span::before {
+  background: var(--blue);
 }
 
 
