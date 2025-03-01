@@ -10,8 +10,9 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'), 
         about: resolve(__dirname, 'about.html'),
+        websiteDesign: resolve(__dirname, 'website-deisgn.html'),
         services: resolve(__dirname, 'services.html'),
-        sectors: resolve(__dirname, 'sectors.html'),
+        wordpressDevelopment: resolve(__dirname, 'wordpress-development.html'),
         articles: resolve(__dirname, 'articles.html'),
         contact: resolve(__dirname, 'contact.html'),
         singlePosts: resolve(__dirname, 'single-posts.html'),

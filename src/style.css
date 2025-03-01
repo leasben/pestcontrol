@@ -246,88 +246,65 @@ h6 {
   font-size: 14px;
 }
 
-/* SERVICES CARD */
-/* From Uiverse.io by SouravBandyopadhyay */ 
-.card-title {
-  color: #262626;
-  font-size: 1.5em;
-  line-height: normal;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-}
-
-.small-desc {
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.5em;
-  color: #452c2c;
-}
-
-.go-corner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 2em;
-  height: 2em;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  background: linear-gradient(135deg, #6293c8, #384c6c);
-  border-radius: 0 4px 0 32px;
-}
-
-.go-arrow {
-  margin-top: -4px;
-  margin-right: -4px;
+/* SERVICES SECTION */
+/* From Uiverse.io by vikiWayne */ 
+.sharedButton {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 1000ms;
+  font-size: 15px;
   color: white;
-  font-family: courier, sans;
-}
-
-.card {
-  display: block;
   position: relative;
-  max-width: 300px;
-  height: 330px;
-  background-color: #f2f8f9;
-  border-radius: 10px;
-  padding: 13px;
-  margin: 12px;
-  text-decoration: none;
-  z-index: 0;
   overflow: hidden;
-  background: linear-gradient(to bottom, #c3e6ec, #a7d1d9);
-  font-family: Arial, Helvetica, sans-serif;
+  outline: 2px solid white;
 }
 
-.card:before {
-  content: '';
+.sharedButton:hover {
+  transform: scale(1.1);
+  outline: 2px solid var(--blue);
+  box-shadow: 4px 5px 17px -4px var(--blue);
+}
+
+.sharedButton::before {
+  content: "";
   position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--blue);
+  transform: skewX(45deg);
   z-index: -1;
-  top: -16px;
-  right: -16px;
-  background: linear-gradient(135deg, #364a60, #384c6c);
-  height: 32px;
-  width: 32px;
-  border-radius: 32px;
-  transform: scale(1);
-  transform-origin: 50% 50%;
-  transition: transform 0.35s ease-out;
+  transition: width 1000ms;
 }
 
-.card:hover:before {
-  transform: scale(28);
+.sharedButton:hover::before {
+  width: 250%;
 }
 
-.card:hover .small-desc {
-  transition: all 0.5s ease-out;
-  color: rgba(255, 255, 255, 0.8);
+.services-button {
+  color: white;
+  outline: 2px solid white;
 }
 
-.card:hover .card-title {
-  transition: all 0.5s ease-out;
-  color: #ffffff;
+.web-button {
+  color: white;
+  outline: 2px solid white;
 }
+.web-button::before {
+  background-color: red;
+}
+.web-button:hover {
+  outline: 2px solid red;
+  box-shadow: 4px 5px 17px -4px red;
+}
+
+
 
 /* SERVICES 2 */
 /* From Uiverse.io by alexruix */ 
@@ -488,8 +465,6 @@ h6 {
 }
 
 /* ABOUT SECTION */
- /* about button */
-
 /* From Uiverse.io by adamgiebl */ 
 .about-btn {
   border: none;
@@ -547,8 +522,6 @@ h6 {
 
 
 /* SERVICES CARDS */
-/* From Uiverse.io by gharsh11032000 */ 
-
 .services-card {
   position: relative;
   display: flex;
@@ -627,6 +600,35 @@ h6 {
   box-shadow: none;
 }
 
+/* WEBSITE DESIGN */
+/* From Uiverse.io by cssbuttons-io */ 
+.websiteButton {
+  padding: 1.3em 3em;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.websiteButton:hover {
+  background-color: var(--blue);
+  box-shadow: 0px 15px 20px rgba(9, 3, 23, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.websiteButton:active {
+  transform: translateY(-1px);
+}
+
+.webButton {
+  color: white;
+  box-shadow: 0px 8px 15px rgba(249, 249, 249, 0.1);
+}
 
 
 
