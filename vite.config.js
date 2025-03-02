@@ -13,10 +13,9 @@ export default defineConfig({
         websiteDesign: resolve(__dirname, 'website-deisgn.html'),
         services: resolve(__dirname, 'services.html'),
         wordpressDevelopment: resolve(__dirname, 'wordpress-development.html'),
+        ecommerceDesign: resolve(__dirname, 'ecommerce-website-design.html'),
         articles: resolve(__dirname, 'articles.html'),
         contact: resolve(__dirname, 'contact.html'),
-        singlePosts: resolve(__dirname, 'single-posts.html'),
-        individualSectors: resolve(__dirname, 'individual-sectors.html'),
       },
       output: {
         dir: 'dist', // Output directory for the build

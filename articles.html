@@ -11,54 +11,51 @@
   <body>
   <!-- NAV BAR -->
   <section class="main-menu">
-<nav class="navbar border-b-blue border-b-4">
-<div class="nav-section flex items-center mx-10">
-   <!-- LOGO -->
-   <div class=" logo pt-0">
-       <a href="/">
-           <img src="images/shannon_logo.svg" alt="Shannon Logo" width="400" height="200">
-       </a>
-   </div>
-
-   <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
-   <btn class="hamburger hamburger--stand is-active lg:hidden" type="button" id="hamburger_toggle">
-       <span class="hamburger-box">
-           <span class="hamburger-inner"></span>
-       </span>
-   </btn>
-
- <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
-<div class="hidden lg:flex md:items-center lg:gap-24 md:gap-12 ml-auto mr-10 uppercase font-poppins-light text-blue text-xl">
-  <ul class="flex space-x-20">
-    <li class="menu-items hover:text-green"><a href="/#about">About</a></li>
-    <li class="menu-items hover:text-green"><a href="/#services">Services</a></li>
-    <li class="menu-items hover:text-green"><a href="/#sectors">Sectors</a></li>
-    <li class="menu-items hover:text-green"><a href="/#articles">Articles</a></li>
-    <li class="menu-items hover:text-green"><a href="/#contact">Contact</a></li>
-  </ul>
-</div>
-
-   <!-- linkedin icon -->
-   <div class="social-icon w-[36px] transition-transform duration-300 ease-in-out transform hover:scale-110 hover:fill-red-500">
-    <a href="https://linkedin.com" target="_blank">
-      <img src="images/icon-linkedin.svg" alt="" class="transition-colors duration-300 ease-in-out hover:fill-red-500">
-    </a>
-  </div>
-  
-</div>
-
-<!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
-<div id="mobile_menu" class="w-full space-y-20 uppercase font-semibold font-poppins-light text-lg z-10 text-white text-left py-6 bg-blue top-20 lg:hidden">
- <ul class="space-y-8">
-  <li class="menu-items"><a href="/#about">About</a></li>
-    <li class="menu-items"><a href="/#services">Services</a></li>
-    <li class="menu-items"><a href="/#sectors">Sectors</a></li>
-    <li class="menu-items"><a href="/#articles">Articles</a></li>
-    <li class="menu-items"><a href="/#contact">Contact</a></li>
+    <nav class="navbar border-b-darkBlue border-b-4">
+    <div class="nav-section flex items-center justify-between w-[95%] mx-auto">
+       <!-- LOGO -->
+       <div class=" logo pt-0">
+           <a href="/">
+               <img src="images/audi-1.svg" alt="Shannon Logo" width="400" height="200">
+           </a>
+       </div>
+    
+       <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
+       <btn class="hamburger hamburger--stand is-active lg:hidden" type="button" id="hamburger_toggle">
+           <span class="hamburger-box">
+               <span class="hamburger-inner"></span>
+           </span>
+       </btn>
+    
+     <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
+    <div class="hidden lg:flex md:items-center lg:gap-24 md:gap-12 ml-auto mr-10 uppercase font-poppins-light text-darkBlue text-xl">
+      <ul class="flex space-x-16">
+        <li class="menu-items hover:text-green"><a href="/about.html">About</a></li>
+        <li class="menu-items hover:text-green"><a href="/website-design.html">WebDesign</a></li>
+        <li class="menu-items hover:text-green"><a href="/services.html">Services</a></li>
+        <li class="menu-items hover:text-green"><a href="/wordpress-development.html">WordPress Development</a></li>
+        <li class="menu-items hover:text-green"><a href="/ecommerce-website-design.html">Ecommerce website design</a></li>
+        <li class="menu-items hover:text-green"><a href="/#articles">Articles</a></li>
+        <li class="menu-items hover:text-green"><a href="/contact.html">Contact</a></li>
       </ul>
-</div>
-</nav>
-</section>
+    </div>
+    </div>
+    
+    <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
+    <div id="mobile_menu" class="w-full space-y-20 uppercase font-semibold font-poppins-light text-lg z-10 text-white text-left py-6 bg-darkBlue top-20 lg:hidden">
+     <ul class="space-y-8">
+      <li class="menu-items"><a href="/about.html">About</a></li>
+        <li class="menu-items"><a href="/website-design.html">WebDesign</a></li>
+        <li class="menu-items"><a href="/services.html">Services</a></li>
+        <li class="menu-items"><a href="/wordpress-development.html">WordPress Development</a></li>
+        <li class="menu-items hover:text-green"><a href="/ecommerce-website-design.html">Ecommerce website design</a></li>
+        <li class="menu-items"><a href="/#articles">Articles</a></li>
+        <li class="menu-items"><a href="/contact.html">Contact</a></li>
+          </ul>
+      
+    </div>
+    </nav>
+    </section>
 
  <!-- ARTICLES -->
   <section class="articles" id="articles">
