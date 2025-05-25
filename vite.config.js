@@ -9,13 +9,14 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'), 
-        about: resolve(__dirname, 'about.html'),
-        websiteDesign: resolve(__dirname, 'website-deisgn.html'),
-        services: resolve(__dirname, 'services.html'),
-        wordpressDevelopment: resolve(__dirname, 'wordpress-development.html'),
-        ecommerceDesign: resolve(__dirname, 'ecommerce-website-design.html'),
-        articles: resolve(__dirname, 'articles.html'),
+        about: resolve(__dirname, 'about-us.html'),
+        strategies: resolve(__dirname, 'strategies.html'),
+        team: resolve(__dirname, 'our-team.html'),
+        responsibleInvesting: resolve(__dirname, 'responsible-investing.html'),
+        insights: resolve(__dirname, 'insights.html'),
+        funds: resolve(__dirname, 'funds.html'),
         contact: resolve(__dirname, 'contact.html'),
+        login: resolve(__dirname, 'login.html'),
       },
       output: {
         dir: 'dist', // Output directory for the build
