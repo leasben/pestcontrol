@@ -29,6 +29,8 @@ module.exports = {
         darkBlue: '#08265A',
         green: '#07522c',
         red: '#ff0000',
+        gunmetal: '#1A1B1F',
+        lilac: '#b3c2da',
       },
     },
   },

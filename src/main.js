@@ -9,3 +9,21 @@ jQuery(function ($) {
       $('#mobile_menu').toggle();
   });
 });
+
+/* TEAM MEMBER */
+jQuery(function ($) {
+  const viewButtons = document.querySelectorAll("[data-toggle='bio']");
+
+  viewButtons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const targetId = btn.getAttribute("data-target");
+      const target = document.getElementById(targetId);
+      if (target) {
+        target.classList.toggle("hidden");
+      }
+    });
+  });
+});
+
+
+

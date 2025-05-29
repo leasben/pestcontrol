@@ -12,6 +12,8 @@
   --green: #07522c;
   --black: #000;
   --red: #ff0000; 
+  --gunmetal:#1A1B1F ;
+  --lilac: #b3c2da;
 }
 
 * {
@@ -48,13 +50,13 @@ body {
   font-family: "Montserrat Light", sans-serif;
   font-size: 16px;
 }
-
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat Medium", sans-serif;
+  font-family: "Montserrat Regular", sans-serif;
 }
 
 
@@ -95,7 +97,7 @@ h6 {
 
 .logo img {
   @apply w-[300px];
-  aspect-ratio: 420 / 200;
+  aspect-ratio: 520 / 180;
 }
 
 
