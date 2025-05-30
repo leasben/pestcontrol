@@ -22,11 +22,11 @@
        </div>
     
        <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
-       <btn class="hamburger hamburger--stand is-active lg:hidden" type="button" id="hamburger_toggle">
-           <span class="hamburger-box">
-               <span class="hamburger-inner"></span>
-           </span>
-       </btn>
+        <btn class="hamburger hamburger--stand lg:hidden" type="button" id="hamburger_toggle">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </btn>
     
      <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
                 <div class="hidden lg:flex items-center gap-10 ml-auto mr-10 font-montserrat-medium font-medium text-darkBlue text-base">
@@ -66,7 +66,7 @@
                </div>
     
               <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
-              <div id="mobile_menu" class="w-full space-y-20 font-semibold font-montserrat-light text-lg z-10 text-black text-center py-6 pl-5 bg-white top-20 lg:hidden">
+              <div id="mobile_menu" class="w-full space-y-20 font-semibold font-montserrat-light text-lg z-10 text-black text-center py-6 pl-5 bg-white top-20 hidden">
               <ul class="space-y-8">
                 <li class="menu-items hover:text-green"><a href="/">Home</a></li>
                 <li class="menu-items hover:text-green"><a href="/#about">About Us</a></li>
@@ -103,7 +103,6 @@
 </section>
 
  <!-- About Section -->
-
 <section class="bg-blue">
   <div class="w-[98%] mx-auto">
     <div class="about-rows py-20">
@@ -124,7 +123,7 @@
 </section>
 
 <!-- ABOUT TWO SECTION -->
- <section class="about-two py-24" id="about">
+ <section id="about" class="scroll-mt-36">
   <div class="w-[98%]">
     <div class="sub-title text-center ">
       <h5 class="uppercase text-sm pb-3 text-gunmetal">Charlie Munger</h5>
@@ -173,7 +172,7 @@
  </section>
 
  <!-- STRATEGIES -->
-  <section class="strategy-section bg-lilac py-16" id="strategies">
+  <section class="scroll-mt-32 bg-lilac py-16" id="strategies">
     <div class="w-[98%] mx-auto">
       <div class="section-title">
         <h2 class="text-2xl text-black text-center py-5 font-montserrat-medium">Strategy</h2>
@@ -272,7 +271,7 @@
   </section>
 
   <!-- TEAM SECTION -->
-   <section class="our-team py-16" id="team">
+   <section class="scroll-mt-32 py-16" id="team">
     <div class="w-[98%] mx-auto">
       <div class="team-title text-center">
         <h2 class="text-2xl text-black py-5 font-bold">Team</h2>
@@ -562,11 +561,6 @@
 
       </div>
     </section>
-
-
-
-
-
 
    <!-- COPYRIGHT FOOTER -->
 <section class="bottom-footer bg-darkGray text-white h-[120px] flex justify-center items-center">
