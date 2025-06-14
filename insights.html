@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Exclesia Capital - Funds</title>
+  </head>
+  <body>
+    
+   <!-- NAV BAR -->
+  <section class="main-menu sticky top-0 z-[1000] bg-white lg:bg-white/90 lg:backdrop-blur-sm shadow-md">
+    <nav class="navbar">
+    <div class="nav-section flex items-center justify-between w-full mx-auto px-8">
+       <!-- LOGO -->
+       <div class=" logo py-4">
+           <a href="/">
+               <img src="images/logoexclesia.svg" alt="Shannon Logo" width="400" height="200">
+           </a>
+       </div>
+    
+       <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
+        <btn class="hamburger hamburger--stand lg:hidden" type="button" id="hamburger_toggle">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </btn>
+    
+     <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
+                <div class="hidden lg:flex items-center gap-10 ml-auto mr-10 font-montserrat-medium font-medium text-darkBlue text-base">
+                  <ul class="flex items-center space-x-6">
+                    <li class="menu-items hover:text-green transition-colors duration-200">
+                      <a href="/">Home</a>
+                    </li>
+                    <li class="menu-items hover:text-green transition-colors duration-200">
+                      <a href="/#about">About Us</a>
+                    </li>
+                    <li class="menu-items hover:text-green transition-colors duration-200">
+                      <a href="/#strategies">Strategies</a>
+                    </li>
+                    <li class="menu-items hover:text-green transition-colors duration-200">
+                      <a href="/our-team.html">Our Team</a>
+                    </li>
+                    <li class="menu-items hover:text-green transition-colors duration-200">
+                      <a href="/responsible-investing.html">Responsible Investing</a>
+                    </li>
+                    <li class="menu-items hover:text-green transition-colors duration-200">
+                      <a href="/insights.html">Insights</a>
+                    </li>
+                    <li class="menu-items hover:text-green transition-colors duration-200">
+                      <a href="/funds.html">Funds</a>
+                    </li>
+                    <li class="menu-items hover:text-green transition-colors duration-200">
+                      <a href="/contact.html">Contact</a>
+                    </li>
+                    <!-- Login Button -->
+                    <li>
+                      <a href="/login.html" class="bg-blue text-white px-5 py-1   text-center hover:bg-gray-800 transition-all">
+                        Login
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+               </div>
+    
+              <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
+              <div id="mobile_menu" class="w-full space-y-20 font-semibold font-montserrat-light text-lg z-10 text-black text-center py-6 pl-5 bg-white top-20 hidden">
+              <ul class="space-y-8">
+                <li class="menu-items hover:text-green"><a href="/">Home</a></li>
+                <li class="menu-items hover:text-green"><a href="/#about">About Us</a></li>
+                  <li class="menu-items hover:text-green"><a href="/#strategies">Strategies</a></li>
+                  <li class="menu-items hover:text-green"><a href="/our-team.html">Our Team</a></li>
+                  <li class="menu-items hover:text-green"><a href="/responsible-investing.html">Responsible Investing</a></li>
+                  <li class="menu-items hover:text-green"><a href="/insights.html">Insights</a></li>
+                  <li class="menu-items hover:text-green"><a href="/funds.html">Funds</a></li>
+                  <li class="menu-items hover:text-green"><a href="/contact.html">Contact</a></li>
+                  <!-- Login Button -->
+                            <li class="w-full lg:w-auto">
+            <a href="/login.html" class="block w-full lg:w-auto bg-blue text-white px-5 py-2 text-center hover:bg-gray-800 transition-all">
+              Login
+            </a>
+          </li>
+          </ul>
+    </div>
+    </nav>
+    </section>
+ 
+<!-- HOME BANNER SECTION -->
+<section class="wordpress-banner-section -mt-[200px]">
+  <div class="wordpress-banner relative">
+    <picture>
+      <!-- Use the same image and adjust the height at different breakpoints -->
+      <img src="images/insights-banner.jpg" class="w-full h-[550px] md:h-[800px] lg:h-[850px] xl:h-[950px] object-cover" alt="about-banner">
+    </picture>
+    
+    <!-- Text Content -->
+   <div class="absolute inset-0 flex flex-col items-center justify-start pt-72 text-blue-900 text-center px-4">
+      <h1 class="text-white text-3xl font-bold">Lorem ipsum dolor sit amet.</h1>
+    </div>
+  </div>
+</section>
+
+<!-- Excelsia Equity 27four Fund-->
+ <section class="py-10">
+  <div class="w-[98%]">
+    <div class="px-4 lg:px-40 pt-5">
+      <div class="funds-title">
+        <h2 class="text-gunmetal text-2xl font-montserrat-medium text-center pb-5">Excelsia Equity 27four Fund</h2>
+    </div>
+      <div class="funds-copy-section">
+        <h3 class="text-gunmetal text-xl font-montserrat-bold pb-5">laboriosam</h3>
+      <p class="text-gunmetal text-base font-montserrat-regular">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nobis necessitatibus aliquid possimus ullam voluptatem vitae harum ea dignissimos quod expedita hic repellendus nam eligendi alias nulla! Magni, recusandae porro quibusdam ab placeat molestiae, laboriosam repellendus corporis delectus numquam eum! Consequatur laborum quos odio! Eos, voluptatem!</p>
+      </div>
+
+    <!-- Row 1 -->
+    <div class="grid grid-cols-2 items-center border-b-[1px] border-blue  py-4">
+        <div class="text-gunmetal text-base font-montserrat-medium">Lorem ipsum dolor</div>
+      <div class="flex items-center gap-2 text-neutral-900">
+        <span class="text-gunmetal text-base">Fixed Income Fact Sheet</span>
+      </div>
+      </a>
+    </div>
+    <div class="grid grid-cols-2 items-center border-b-[1px] border-blue  py-4">
+        <div class="text-gunmetal text-base font-montserrat-medium">Lorem ipsum dolor</div>
+      <div class="flex items-center gap-2 text-neutral-900">
+        <span class="text-gunmetal text-base">Fixed Income Fact Sheet</span>
+      </div>
+      </a>
+    </div>
+    <div class="grid grid-cols-2 items-center border-b-[1px] border-blue  py-4">
+        <div class="text-gunmetal text-base font-montserrat-medium">Lorem ipsum dolor</div>
+      <div class="flex items-center gap-2 text-neutral-900">
+        <span class="text-gunmetal text-base">Fixed Income Fact Sheet</span>
+      </div>
+      </a>
+    </div>
+    <!-- Row 2 -->
+    <div class="grid grid-cols-2 items-center border-b-[1px] border-blue  py-4">
+        <div class="text-gunmetal text-base font-montserrat-medium">Lorem ipsum dolor</div>
+      <div class="flex items-center gap-2 text-neutral-900">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+        </svg>
+        <span class="text-gunmetal text-base">Fixed Income Fact Sheet</span>
+      </div>
+      </a>
+    </div>
+    <!-- Row 3 -->
+    <div class="grid grid-cols-2 items-center border-b-[1px] border-blue  py-4">
+        <div class="text-gunmetal text-base font-montserrat-medium">Lorem ipsum dolor</div>
+      <div class="flex items-center gap-2 text-neutral-900">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+        </svg>
+        <span class="text-gunmetal text-base">Fixed Income Fact Sheet</span>
+      </div>
+      </a>
+    </div>
+
+    </div>
+  </div>
+ </section>
+
+   <!-- COPYRIGHT FOOTER -->
+<section class="bottom-footer bg-darkGray text-white h-[120px] flex justify-center items-center">
+  <div class="bottom-text text-center font-montserrat-extra-light text-[11px]">
+   Excelsia Capital Proprietary Limited is an authorised financial services provider. © 2025 by Excelsia Capital Proprietary Limited <br>  <span class="underline"><a href="#">Leagl Information</a></span> | Website Designed By <a href="https://elntech.co.za" target="_blank" class="hover:underline">ELNTECH</a>
+        
+  </div>
+</section>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+crossorigin="anonymous">
+</script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

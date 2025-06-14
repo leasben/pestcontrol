@@ -10,7 +10,7 @@
   </head>
   <body>
     
-  <!-- NAV BAR -->
+     <!-- NAV BAR -->
   <section class="main-menu sticky top-0 z-[1000] bg-white lg:bg-white/90 lg:backdrop-blur-sm shadow-md">
     <nav class="navbar">
     <div class="nav-section flex items-center justify-between w-full mx-auto px-8">
@@ -22,11 +22,11 @@
        </div>
     
        <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
-       <btn class="hamburger hamburger--stand is-active lg:hidden" type="button" id="hamburger_toggle">
-           <span class="hamburger-box">
-               <span class="hamburger-inner"></span>
-           </span>
-       </btn>
+        <btn class="hamburger hamburger--stand lg:hidden" type="button" id="hamburger_toggle">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </btn>
     
      <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
                 <div class="hidden lg:flex items-center gap-10 ml-auto mr-10 font-montserrat-medium font-medium text-darkBlue text-base">
@@ -41,7 +41,7 @@
                       <a href="/#strategies">Strategies</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="/#team">Our Team</a>
+                      <a href="/our-team.html">Our Team</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
                       <a href="/responsible-investing.html">Responsible Investing</a>
@@ -53,11 +53,11 @@
                       <a href="/funds.html">Funds</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="/#contact">Contact</a>
+                      <a href="/contact.html">Contact</a>
                     </li>
                     <!-- Login Button -->
                     <li>
-                      <a href="/login.html" class="bg-black text-white px-5 py-1   text-center hover:bg-gray-800 transition-all">
+                      <a href="/login.html" class="bg-blue text-white px-5 py-1   text-center hover:bg-gray-800 transition-all">
                         Login
                       </a>
                     </li>
@@ -66,19 +66,19 @@
                </div>
     
               <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
-              <div id="mobile_menu" class="w-full space-y-20 font-semibold font-montserrat-light text-lg z-10 text-black text-center py-6 pl-5 bg-white top-20 lg:hidden">
+              <div id="mobile_menu" class="w-full space-y-20 font-semibold font-montserrat-light text-lg z-10 text-black text-center py-6 pl-5 bg-white top-20 hidden">
               <ul class="space-y-8">
                 <li class="menu-items hover:text-green"><a href="/">Home</a></li>
                 <li class="menu-items hover:text-green"><a href="/#about">About Us</a></li>
                   <li class="menu-items hover:text-green"><a href="/#strategies">Strategies</a></li>
-                  <li class="menu-items hover:text-green"><a href="/#team">Our Team</a></li>
+                  <li class="menu-items hover:text-green"><a href="/our-team.html">Our Team</a></li>
                   <li class="menu-items hover:text-green"><a href="/responsible-investing.html">Responsible Investing</a></li>
                   <li class="menu-items hover:text-green"><a href="/insights.html">Insights</a></li>
                   <li class="menu-items hover:text-green"><a href="/funds.html">Funds</a></li>
-                  <li class="menu-items hover:text-green"><a href="/#contact">Contact</a></li>
+                  <li class="menu-items hover:text-green"><a href="/contact.html">Contact</a></li>
                   <!-- Login Button -->
                             <li class="w-full lg:w-auto">
-            <a href="/login.html" class="block w-full lg:w-auto bg-black text-white px-5 py-2 text-center hover:bg-gray-800 transition-all">
+            <a href="/login.html" class="block w-full lg:w-auto bg-blue text-white px-5 py-2 text-center hover:bg-gray-800 transition-all">
               Login
             </a>
           </li>
@@ -92,7 +92,7 @@
   <div class="wordpress-banner relative">
     <picture>
       <!-- Use the same image and adjust the height at different breakpoints -->
-      <img src="images/about-wesite-banner.jpg" class="w-full h-[550px] md:h-[800px] lg:h-[850px] xl:h-[950px] object-cover" alt="about-banner">
+      <img src="images/funds-banner.jpg" class="w-full h-[550px] md:h-[800px] lg:h-[850px] xl:h-[950px] object-cover" alt="about-banner">
     </picture>
     
     <!-- Text Content -->
@@ -286,7 +286,7 @@
  </section>
 
   <!-- Forms -->
- <section class="pt-10">
+ <section class="py-10">
   <div class="w-[98%]">
     <div class="px-4 lg:px-40 pt-5">
       <div class="funds-title">
@@ -345,29 +345,6 @@
     </div>
   </div>
  </section>
-
-
-   <!-- CONTACT SECTION -->
-    <section class="contact-section" id="contact">
-      <div class="w-[98%] mx-auto">
-       
-        <!-- MAP -->
-      <div class="contact-map pt-10">
-      <div class="relative min-h-[350px]" style="padding-top: 36.25%;"> <!-- 16:9 Aspect Ratio -->
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.5409809648136!2d18.460876775762603!3d-33.978635773184735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc42d20ebf6f59%3A0xfdb28d58e52bb34d!2s21%20Dreyer%20St%2C%20Claremont%2C%20Cape%20Town%2C%207708!5e0!3m2!1sen!2sza!4v1748542707432!5m2!1sen!2sza" 
-          width="100%" 
-          height="100%" 
-          style="border:0; position: absolute; top: 0; left: 0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </div >
-
-      </div>
-    </section>
 
    <!-- COPYRIGHT FOOTER -->
 <section class="bottom-footer bg-darkGray text-white h-[120px] flex justify-center items-center">
