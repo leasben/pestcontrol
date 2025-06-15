@@ -10,7 +10,6 @@
   </head>
   <body>
     
-  <!-- NAV BAR -->
   <section class="main-menu sticky top-0 z-[1000] bg-white lg:bg-white/90 lg:backdrop-blur-sm shadow-md">
     <nav class="navbar">
     <div class="nav-section flex items-center justify-between w-full mx-auto px-8">
@@ -22,11 +21,11 @@
        </div>
     
        <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
-       <btn class="hamburger hamburger--stand is-active lg:hidden" type="button" id="hamburger_toggle">
-           <span class="hamburger-box">
-               <span class="hamburger-inner"></span>
-           </span>
-       </btn>
+        <btn class="hamburger hamburger--stand lg:hidden" type="button" id="hamburger_toggle">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </btn>
     
      <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
                 <div class="hidden lg:flex items-center gap-10 ml-auto mr-10 font-montserrat-medium font-medium text-darkBlue text-base">
@@ -41,7 +40,7 @@
                       <a href="/#strategies">Strategies</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="/#team">Our Team</a>
+                      <a href="/our-team.html">Our Team</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
                       <a href="/responsible-investing.html">Responsible Investing</a>
@@ -53,11 +52,11 @@
                       <a href="/funds.html">Funds</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="/#contact">Contact</a>
+                      <a href="/contact.html">Contact</a>
                     </li>
                     <!-- Login Button -->
                     <li>
-                      <a href="/login.html" class="bg-black text-white px-5 py-1   text-center hover:bg-gray-800 transition-all">
+                      <a href="/login.html" class="bg-blue text-white px-5 py-1   text-center hover:bg-gray-800 transition-all">
                         Login
                       </a>
                     </li>
@@ -66,19 +65,19 @@
                </div>
     
               <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
-              <div id="mobile_menu" class="w-full space-y-20 font-semibold font-montserrat-light text-lg z-10 text-black text-center py-6 pl-5 bg-white top-20 lg:hidden">
+              <div id="mobile_menu" class="w-full space-y-20 font-semibold font-montserrat-light text-lg z-10 text-black text-center py-6 pl-5 bg-white top-20 hidden">
               <ul class="space-y-8">
                 <li class="menu-items hover:text-green"><a href="/">Home</a></li>
                 <li class="menu-items hover:text-green"><a href="/#about">About Us</a></li>
                   <li class="menu-items hover:text-green"><a href="/#strategies">Strategies</a></li>
-                  <li class="menu-items hover:text-green"><a href="/#team">Our Team</a></li>
+                  <li class="menu-items hover:text-green"><a href="/our-team.html">Our Team</a></li>
                   <li class="menu-items hover:text-green"><a href="/responsible-investing.html">Responsible Investing</a></li>
                   <li class="menu-items hover:text-green"><a href="/insights.html">Insights</a></li>
                   <li class="menu-items hover:text-green"><a href="/funds.html">Funds</a></li>
-                  <li class="menu-items hover:text-green"><a href="/#contact">Contact</a></li>
+                  <li class="menu-items hover:text-green"><a href="/contact.html">Contact</a></li>
                   <!-- Login Button -->
                             <li class="w-full lg:w-auto">
-            <a href="/login.html" class="block w-full lg:w-auto bg-black text-white px-5 py-2 text-center hover:bg-gray-800 transition-all">
+            <a href="/login.html" class="block w-full lg:w-auto bg-blue text-white px-5 py-2 text-center hover:bg-gray-800 transition-all">
               Login
             </a>
           </li>
@@ -87,78 +86,90 @@
     </nav>
     </section>
  
-<!-- HOME BANNER SECTION -->
-<section class="wordpress-banner-section -mt-[200px]">
+<section class="wordpress-banner-section">
   <div class="wordpress-banner relative">
     <picture>
       <!-- Use the same image and adjust the height at different breakpoints -->
-      <img src="images/about-wesite-banner.jpg" class="w-full h-[550px] md:h-[800px] lg:h-[850px] xl:h-[950px] object-cover" alt="about-banner">
+      <img src="images/responsible-investing.jpg" class="w-full sm:h-[300px] md:h-[400px] lg:h-[680px] object-cover" alt="about-banner">
     </picture>
     <!-- Text Content -->
-   <div class="absolute inset-0 flex flex-col items-center justify-start pt-72 text-blue-900 text-center px-4">
-      <h1 class="text-white text-3xl font-bold">Lorem ipsum dolor sit amet.</h1>
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-blue-900 text-center px-4">
+      <h1 class="text-white text-2xl md:text-4xl leading-10 font-extrabold px-24 lg:px-60">“The greatest threat to our planet is the belief that someone else will save it.”
+Robert Swan</h1>
     </div>
   </div>
 </section>
 
-<!-- ABOUT TWO SECTION -->
- <section class="about-two py-24" id="about">
+<!-- Responsible Investing -->
+ <section class="bg-gray-100 py-12">
   <div class="w-[98%]">
-    <div class="who-we-are text-center px-4 lg:px-64 pt-16">
-      <p class="text-gunmetal text-base font-montserrat-regular pb-16">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nobis necessitatibus aliquid possimus ullam voluptatem vitae laudantium esse, consequuntur error harum ea dignissimos quod expedita hic repellendus nam eligendi alias nulla! Magni, recusandae porro quibusdam ab placeat molestiae, laboriosam repellendus corporis delectus numquam eum! Consequatur laborum quos odio! Eos, voluptatem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nobis necessitatibus aliquid possimus ullam voluptatem vitae laudantium esse, consequuntur error harum ea dignissimos quod expedita hic repellendus nam eligendi alias nulla! Magni, recusandae porro quibusdam ab placeat molestiae, laboriosam repellendus corporis delectus numquam eum! Consequatur laborum quos odio! Eos, voluptatem!</p>
-    </div>
+   <div class="grid grid-cols-1 md:grid-cols-2 gap-10 px-20 items-center">
+  <!-- TEXT COLUMN -->
+  <div class="flex items-center justify-center">
+    <p class="text-gunmetal text-base font-montserrat-regular">
+      Our purpose at Excelsia Capital is to grow a Company in which responsible investing and diversity is embraced. Culture, gender, and education are strong contributors to our competitive advantage as we believe that diversity of thought ensures a more robust investment process. The fiduciary duty of safeguarding the long-term interests of our clients, primarily through benchmark beating returns, and our employees through the creation of a healthy working environment, ensures that we positively contribute to that part of society which we can impact directly.<br>
+        <a href="#"><button class="investing mt-5">Get in Touch<span></span></button></a>
+    </p>
+  </div>
+   <!-- IMAGE COLUMN -->
+   
+  <div>
+    <img src="images/investing-responsible.svg" alt="" class="w-full h-96 object-contain mx-auto">
+  </div>
+  </div>
+</div>
+</section>
+
+<section class="py-12">
     <!-- GRIDS -->
-    <div class="invetsment-philosophy text-center px-4 lg:px-56">
-       <h2 class="text-2xl text-black text-center pb-16">Lorem ipsum dolor sit amet</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div class="col-1">
-          <img src="images/excel-log.svg" alt="margin-logo" class="w-16 h-16 mx-auto pb-5">
-          <p class="text-base text-gunmetal font-montserrat-regular">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nemo quaerat ducimus ex aliquam omnis? Accusamus labore omnis neque nulla maiores id aut sint iure. Repudiandae officia nihil nostrum voluptatem.</p>
-        </div>
-        <div class="col-2">
-          <img src="images/excel-log.svg" alt="margin-logo" class="w-16 h-16 mx-auto pb-5">
-          <p class="text-base text-gunmetal font-montserrat-regular">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui impedit distinctio ab beatae deleniti repellendus hic, accusantium tempore molestias placeat iure, sint laborum quae obcaecati harum unde quasi dignissimos nam! Ipsa nobis magnam similique explicabo temporibus. Odit culpa nostrum perspiciatis.</p>
-        </div>
-        <div class="col-3">
-          <img src="images/excel-log.svg" alt="margin-logo" class="w-16 h-16 mx-auto pb-5">
-          <p class="text-base text-gunmetal font-montserrat-regular">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nemo quaerat ducimus ex aliquam omnis? Accusamus labore omnis neque nulla maiores id aut sint iure. Repudiandae officia nihil nostrum voluptatem.</p>
-        </div>
-        <div class="col-4">
-          <img src="images/excel-log.svg" alt="margin-logo" class="w-16 h-16 mx-auto pb-5">
-          <p class="text-base text-gunmetal font-montserrat-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae id est rerum voluptate repudiandae quod unde nihil reprehenderit, saepe autem maiores quasi fugiat incidunt dolorum.</p>
-        </div>
-      </div>
+   <div class="invetsment-philosophy text-center px-4 lg:px-56">
+  <h2 class="text-2xl text-black text-center pb-16">Our core Responsible Investment objectives</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+    
+    <!-- ITEM -->
+    <div class="group relative bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition duration-300">
+      <img src="images/excel-log.svg" alt="margin-logo" class="w-16 h-16 mx-auto mb-4">
+      
+      <!-- Title -->
+      <h3 class="text-lg font-semibold text-black">Environmental, Social and Governance (ESG)</h3>
+      
+      <!-- Copy (hidden by default, shows on hover) -->
+      <p class="text-base text-gunmetal font-montserrat-regular mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+       Ensuring Environmental, Social and Governance (ESG) factors are integrated into our investment process, thereby ensuring our investment returns are sustainable and consistent over our long-term investment horizon.
+      </p>
     </div>
+
+    <!-- Repeat for other items -->
+    <div class="group relative bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition duration-300">
+      <img src="images/excel-log.svg" alt="margin-logo" class="w-16 h-16 mx-auto mb-4">
+      <h3 class="text-lg font-semibold text-black"> Long-term sustainability </h3>
+      <p class="text-base text-gunmetal font-montserrat-regular mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+       Long-term sustainability includes ensuring companies embrace the adoption of the universally accepted United Nation Sustainable Development Goals, and that these goals are included in their ESG considerations.
+      </p>
+    </div>
+
+    <!-- Add the other two items similarly -->
+    <div class="group relative bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition duration-300">
+      <img src="images/excel-log.svg" alt="margin-logo" class="w-16 h-16 mx-auto mb-4">
+      <h3 class="text-lg font-semibold text-black">Investment decisions</h3>
+      <p class="text-base text-gunmetal font-montserrat-regular mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+       As an active investor we aim to meaningfully influence ideological change within companies, whereby engagement with company management ensures that our investment decisions remain robust and that both our clients’ and investors’ rights are safeguarded.
+      </p>
+    </div>
+
+    <div class="group relative bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition duration-300">
+      <img src="images/excel-log.svg" alt="margin-logo" class="w-16 h-16 mx-auto mb-4">
+      <h3 class="text-lg font-semibold text-black">Working collaboratively</h3>
+      <p class="text-base text-gunmetal font-montserrat-regular mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+       Working collaboratively with the asset management industry enhancing “economies of scale” to achieve better outcomes.
+      </p>
+    </div>
+
+  </div>
+</div>
   </div>
  </section>
-
-   <!-- CONTACT SECTION -->
-    <section class="contact-section" id="contact">
-      <div class="w-[98%] mx-auto">
-        <div class="contact-text px-4 lg:px-64">
-        <p class="text-base text-black font-montserrat-regular text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam unde sed cumque, excepturi sapiente quasi quia minus quaerat voluptatum iusto? Quidem modi, ab ea sit assumenda repellendus voluptates aliquid ipsum, a consectetur illo culpa quasi! Incidunt odio rem enim error? ex aliquam omnis? Accusamus labore omnis neque nulla maiores id aut sint iure. Repudiandae officia nihil nostrum voluptatem</p>
-      </div>
-      <div class="proxy">
-        <h2 class="text-2xl text-black text-center pb-16 pt-8">Lorem, ipsum dolor.</h2>
-      </div>
-
-        <!-- MAP -->
-      <div class="contact-map">
-      <div class="relative min-h-[350px]" style="padding-top: 36.25%;"> <!-- 16:9 Aspect Ratio -->
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.5409809648136!2d18.460876775762603!3d-33.978635773184735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc42d20ebf6f59%3A0xfdb28d58e52bb34d!2s21%20Dreyer%20St%2C%20Claremont%2C%20Cape%20Town%2C%207708!5e0!3m2!1sen!2sza!4v1748542707432!5m2!1sen!2sza" 
-          width="100%" 
-          height="100%" 
-          style="border:0; position: absolute; top: 0; left: 0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </div >
-
-      </div>
-    </section>
 
    <!-- COPYRIGHT FOOTER -->
 <section class="bottom-footer bg-darkGray text-white h-[120px] flex justify-center items-center">

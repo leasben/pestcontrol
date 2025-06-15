@@ -277,6 +277,32 @@ button:hover .button-text {
  color: #fff;
 }
 
+/* Responsible Investing */
+/* From Uiverse.io by adamgiebl */ 
+.investing {
+  padding: 1rem 2rem;
+  font-weight: 700;
+  background: rgb(255, 255, 255);
+  color: var(--blue);
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border-bottom: 2px solid var(--blue);
+  border-right: 2px solid var(--blue);
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  transition-duration: 1s;
+  transition-property: border-top, border-left, border-bottom, border-right,
+    box-shadow;
+}
+
+.investing:hover {
+  border-top: 2px solid var(--blue);
+  border-left: 2px solid var(--blue);
+  border-bottom: 2px solid rgb(60, 23, 193);
+  border-right: 2px solid rgb(47, 29, 169);
+  box-shadow: rgba(18, 37, 203, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px;
+}
 
 
 
