@@ -9,50 +9,79 @@
     <title>Shannon - Articles</title>
   </head>
   <body>
-  <!-- NAV BAR -->
-  <section class="main-menu">
-    <nav class="navbar border-b-darkBlue border-b-4">
-    <div class="nav-section flex items-center justify-between w-[95%] mx-auto">
+   <!-- NAV BAR -->
+  <section class="main-menu sticky top-0 z-[1000] bg-white lg:bg-white/90 lg:backdrop-blur-sm shadow-md">
+    <nav class="navbar">
+    <div class="nav-section flex items-center justify-between w-full mx-auto px-8">
        <!-- LOGO -->
-       <div class=" logo pt-0">
+       <div class=" logo py-4">
            <a href="/">
-               <img src="images/audi-1.svg" alt="Shannon Logo" width="400" height="200">
+               <img src="images/logoexclesia.svg" alt="Shannon Logo" width="400" height="200">
            </a>
        </div>
     
        <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
-       <btn class="hamburger hamburger--stand is-active lg:hidden" type="button" id="hamburger_toggle">
-           <span class="hamburger-box">
-               <span class="hamburger-inner"></span>
-           </span>
-       </btn>
+        <btn class="hamburger hamburger--stand lg:hidden" type="button" id="hamburger_toggle">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </btn>
     
      <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
-    <div class="hidden lg:flex md:items-center lg:gap-24 md:gap-12 ml-auto mr-10 uppercase font-poppins-light text-darkBlue text-xl">
-      <ul class="flex space-x-16">
-        <li class="menu-items hover:text-green"><a href="/about.html">About</a></li>
-        <li class="menu-items hover:text-green"><a href="/website-design.html">WebDesign</a></li>
-        <li class="menu-items hover:text-green"><a href="/services.html">Services</a></li>
-        <li class="menu-items hover:text-green"><a href="/wordpress-development.html">WordPress Development</a></li>
-        <li class="menu-items hover:text-green"><a href="/ecommerce-website-design.html">Ecommerce website design</a></li>
-        <li class="menu-items hover:text-green"><a href="/#articles">Articles</a></li>
-        <li class="menu-items hover:text-green"><a href="/contact.html">Contact</a></li>
-      </ul>
-    </div>
-    </div>
+                <div class="hidden lg:flex items-center gap-10 ml-auto mr-10 font-montserrat-medium font-medium text-darkBlue text-base">
+                  <ul class="flex items-center space-x-6">
+                    <li class="menu-items hover:text-green transition-colors duration-200">
+                      <a href="/">Home</a>
+                    </li>
+                    <li class="menu-items hover:text-green transition-colors duration-200">
+                      <a href="/#about">About Us</a>
+                    </li>
+                    <li class="menu-items hover:text-green transition-colors duration-200">
+                      <a href="/#strategies">Strategies</a>
+                    </li>
+                    <li class="menu-items hover:text-green transition-colors duration-200">
+                      <a href="/our-team.html">Our Team</a>
+                    </li>
+                    <li class="menu-items hover:text-green transition-colors duration-200">
+                      <a href="/responsible-investing.html">Responsible Investing</a>
+                    </li>
+                    <li class="menu-items hover:text-green transition-colors duration-200">
+                      <a href="/insights.html">Insights</a>
+                    </li>
+                    <li class="menu-items hover:text-green transition-colors duration-200">
+                      <a href="/funds.html">Funds</a>
+                    </li>
+                    <li class="menu-items hover:text-green transition-colors duration-200">
+                      <a href="/contact.html">Contact</a>
+                    </li>
+                    <!-- Login Button -->
+                    <li>
+                      <a href="#" class="bg-blue text-white px-5 py-1   text-center hover:bg-gray-800 transition-all">
+                        Login
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+               </div>
     
-    <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
-    <div id="mobile_menu" class="w-full space-y-20 uppercase font-semibold font-poppins-light text-lg z-10 text-white text-left py-6 bg-darkBlue top-20 lg:hidden">
-     <ul class="space-y-8">
-      <li class="menu-items"><a href="/about.html">About</a></li>
-        <li class="menu-items"><a href="/website-design.html">WebDesign</a></li>
-        <li class="menu-items"><a href="/services.html">Services</a></li>
-        <li class="menu-items"><a href="/wordpress-development.html">WordPress Development</a></li>
-        <li class="menu-items hover:text-green"><a href="/ecommerce-website-design.html">Ecommerce website design</a></li>
-        <li class="menu-items"><a href="/#articles">Articles</a></li>
-        <li class="menu-items"><a href="/contact.html">Contact</a></li>
+              <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
+              <div id="mobile_menu" class="w-full space-y-20 font-semibold font-montserrat-light text-lg z-10 text-black text-center py-6 pl-5 bg-white top-20 hidden">
+              <ul class="space-y-8">
+                <li class="menu-items hover:text-green"><a href="/">Home</a></li>
+                <li class="menu-items hover:text-green"><a href="/#about">About Us</a></li>
+                  <li class="menu-items hover:text-green"><a href="/#strategies">Strategies</a></li>
+                  <li class="menu-items hover:text-green"><a href="/our-team.html">Our Team</a></li>
+                  <li class="menu-items hover:text-green"><a href="/responsible-investing.html">Responsible Investing</a></li>
+                  <li class="menu-items hover:text-green"><a href="/insights.html">Insights</a></li>
+                  <li class="menu-items hover:text-green"><a href="/funds.html">Funds</a></li>
+                  <li class="menu-items hover:text-green"><a href="/contact.html">Contact</a></li>
+                  <!-- Login Button -->
+                            <li class="w-full lg:w-auto">
+            <a href="#" class="block w-full lg:w-auto bg-blue text-white px-5 py-2 text-center hover:bg-gray-800 transition-all">
+              Login
+            </a>
+          </li>
           </ul>
-      
     </div>
     </nav>
     </section>
