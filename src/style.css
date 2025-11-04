@@ -193,6 +193,10 @@ h6 {
   background: gray;
 }
 
+.reference-carousel {
+  overflow: hidden; /* prevent scrollbars */
+}
+
 /* Refereence Read More Button */ 
 /* From Uiverse.io by gharsh11032000 */ 
 .animated-button {
