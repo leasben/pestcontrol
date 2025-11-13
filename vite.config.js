@@ -11,7 +11,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'), 
         team: resolve(__dirname, 'our-team.html'),
         responsibleInvesting: resolve(__dirname, 'responsible-investing.html'),
-        insights: resolve(__dirname, 'insights.html'),
+        about: resolve(__dirname, 'about-us.html'),
         funds: resolve(__dirname, 'funds.html'),
         contact: resolve(__dirname, 'contact.html'),
       },
