@@ -12,15 +12,23 @@
     
   <!-- NAV BAR -->
   <section class="main-menu sticky top-0 z-[1000] bg-white shadow-md">
+     <!-- TOP SOCIAL BAR -->
+    <div class="top-social-bar hidden lg:flex justify-end items-start w-full px-[73px] py-2 bg-blue">
+      <div class="social-icons flex gap-4">
+        <a href="https://facebook.com" tagret="_blank"><img src="images/pf-facebook-icon.svg" alt="Facebook" class="w-6 h-6 transform transition-all duration-500 hover:-scale-x-90"></a>
+        <a href="#"><img src="images/pf-youtube-icon.svg" alt="youtube" class="w-6 h-6 transform transition-all duration-500 hover:-scale-x-90"></a>
+        <a href="#"><img src="images/pf-instagram-icon.svg" alt="Instagram" class="w-6 h-6 transform transition-all duration-500 hover:-scale-x-90"></a>
+        <a href="#"><img src="images/pf-linkedin-icon.svg" alt="LinkedIn" class="w-6 h-6 transform transition-all duration-500 hover:-scale-x-90"></a>
+      </div>
+    </div>
     <nav class="navbar">
     <div class="nav-section flex items-center justify-between w-full mx-auto px-8">
        <!-- LOGO -->
-       <div class=" logo py-4">
+       <div class=" logo py-2">
            <a href="/">
                <img src="images/plumbing_logo.svg" alt="Logo" width="400" height="200">
            </a>
        </div>
-    
        <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
         <btn class="hamburger hamburger--stand lg:hidden" type="button" id="hamburger_toggle">
           <span class="hamburger-box">
@@ -38,7 +46,7 @@
                       <a href="about-us.html">About</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="/#strategies">Services</a>
+                      <a href="/services.html">Services</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
                       <a href="/our-team.html">References</a>
@@ -56,7 +64,7 @@
                   </ul>
                 </div>
                </div>
-    
+                
               <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
               <div id="mobile_menu" class="w-full space-y-20 font-semibold font-montserrat-light text-lg z-10 text-black text-center py-6 pl-5 bg-white top-20 hidden">
               <ul class="space-y-8">
@@ -67,7 +75,7 @@
                       <a href="about-us.html">About</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="/#strategies">Services</a>
+                      <a href="/services.html">Services</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
                       <a href="/our-team.html">References</a>
@@ -81,7 +89,6 @@
                     <li class="menu-items hover:text-green transition-colors duration-200">
                       <a href="/contact.html">Contact</a>
                     </li>
-            
           </ul>
     </div>
     </nav>
@@ -202,28 +209,28 @@
    <div class="reference-carousel px-10 pt-5 lg:px-24" data-flickity='{ "groupCells": 1, "autoPlay": true, "wrapAround": true }'>
 
   <div class="reference-carousel-cell w-96 min-h-[600px] py-10 flex flex-col justify-start">
-    <h2 class="text-center text-xl text-blue">John Doe</h2>
-    <p class="text-base px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. Vel nemo distinctio dignissimos voluptatibus deserunt! Provident optio praesentium nostrum libero eos atque, adipisci at suscipit quidem quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt!quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt! </p>
+    <h2 class="text-center text-xl text-white">John Doe</h2>
+    <p class="text-base px-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. Vel nemo distinctio dignissimos voluptatibus deserunt! Provident optio praesentium nostrum libero eos atque, adipisci at suscipit quidem quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt!quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt! </p>
   </div>
 
   <div class="reference-carousel-cell w-96 min-h-[600px] py-10 flex flex-col justify-start">
-    <h2 class="text-center text-xl text-blue">John Doe</h2>
-    <p class="text-base px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. Vel nemo distinctio dignissimos voluptatibus deserunt! Provident optio praesentium nostrum libero eos atque, adipisci at suscipit quidem quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt!quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt! </p>
+    <h2 class="text-center text-xl text-white">John Doe</h2>
+    <p class="text-base px-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. Vel nemo distinctio dignissimos voluptatibus deserunt! Provident optio praesentium nostrum libero eos atque, adipisci at suscipit quidem quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt!quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt! </p>
   </div>
 
   <div class="reference-carousel-cell w-96 min-h-[600px] py-10 flex flex-col justify-start">
-    <h2 class="text-center text-xl text-blue">John Doe</h2>
-    <p class="text-base px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. Vel nemo distinctio dignissimos voluptatibus deserunt! Provident optio praesentium nostrum libero eos atque, adipisci at suscipit quidem quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt!quibusdam architecto blanditiis mollitia minus explicabo fugit impedit </p>
+    <h2 class="text-center text-xl text-white">John Doe</h2>
+    <p class="text-base px-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. Vel nemo distinctio dignissimos voluptatibus deserunt! Provident optio praesentium nostrum libero eos atque, adipisci at suscipit quidem quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt!quibusdam architecto blanditiis mollitia minus explicabo fugit impedit </p>
   </div>
 
   <div class="reference-carousel-cell w-96 min-h-[600px] py-10 flex flex-col justify-start">
-    <h2 class="text-center text-xl text-blue">John Doe</h2>
-    <p class="text-base px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. Vel nemo distinctio dignissimos voluptatibus deserunt! Provident optio praesentium nostrum libero eos atque, adipisci at suscipit quidem quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt!quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt! </p>
+    <h2 class="text-center text-xl text-white">John Doe</h2>
+    <p class="text-base px-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. Vel nemo distinctio dignissimos voluptatibus deserunt! Provident optio praesentium nostrum libero eos atque, adipisci at suscipit quidem quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt!quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt! </p>
   </div>
 
   <div class="reference-carousel-cell w-96 min-h-[600px] py-10 flex flex-col justify-start">
-    <h2 class="text-center text-xl text-blue">John Doe</h2>
-    <p class="text-base px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. </p>
+    <h2 class="text-center text-xl text-white">John Doe</h2>
+    <p class="text-base px-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. </p>
   </div>
 
 </div>
