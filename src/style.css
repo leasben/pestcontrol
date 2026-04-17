@@ -8,11 +8,8 @@
 
 :root {
   --blue: #2894D1;
-  --darkGray: #4b4b4b;
-  --green: #07522c;
-  --black: #000;
-  --gunmetal:#1A1B1F ;
-  --lilac: #b3c2da;
+   --black: '#000000';
+  --yellow: '#EBF840';
 }
 
 * {
@@ -58,6 +55,14 @@ h6 {
   font-family: "Montserrat Regular", sans-serif;
 }
 
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  background-color: #fff;
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+  background-color: #fff;
+}
+
 
 @font-face {
   font-family: "Montserrat ExtraLight";
@@ -95,8 +100,8 @@ h6 {
 }
 
 .logo img {
-  @apply w-[300px];
-  aspect-ratio: 520 / 180;
+  @apply w-[180px];
+  aspect-ratio: 420 / 200;
 }
 
 .home-carousel-cell {

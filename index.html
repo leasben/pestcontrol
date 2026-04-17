@@ -6,19 +6,18 @@
     <link rel="stylesheet" href="/src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <title>Plumbing It Fine - Home</title>
+    <title>Ray Von Plumbing - Home</title>
   </head>
   <body>
     
   <!-- NAV BAR -->
-  <section class="main-menu sticky top-0 z-[1000] bg-white shadow-md">
+  <section class="main-menu sticky top-0 z-[1000] bg-black shadow-md">
      <!-- TOP SOCIAL BAR -->
-    <div class="top-social-bar hidden lg:flex justify-end items-start w-full px-[73px] py-2 bg-blue">
+    <div class="top-social-bar hidden lg:flex justify-end items-start w-full px-[73px] py-2 bg-gray-300">
       <div class="social-icons flex gap-4">
-        <a href="https://facebook.com" tagret="_blank"><img src="images/pf-facebook-icon.svg" alt="Facebook" class="w-6 h-6 transform transition-all duration-500 hover:-scale-x-90"></a>
-        <a href="#"><img src="images/pf-youtube-icon.svg" alt="youtube" class="w-6 h-6 transform transition-all duration-500 hover:-scale-x-90"></a>
-        <a href="#"><img src="images/pf-instagram-icon.svg" alt="Instagram" class="w-6 h-6 transform transition-all duration-500 hover:-scale-x-90"></a>
-        <a href="#"><img src="images/pf-linkedin-icon.svg" alt="LinkedIn" class="w-6 h-6 transform transition-all duration-500 hover:-scale-x-90"></a>
+        <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook" class="w-8 h-8 transform transition-all duration-500 hover:-scale-x-90"></a>
+        <a href="#"><img src="images/instagram-icon.svg" alt="Instagram" class="w-8 h-8 transform transition-all duration-500 hover:-scale-x-90"></a>
+
       </div>
     </div>
     <nav class="navbar">
@@ -26,39 +25,36 @@
        <!-- LOGO -->
        <div class=" logo py-2">
            <a href="/">
-               <img src="images/plumbing_logo.svg" alt="Logo" width="400" height="200">
+               <img src="images/rayvon_plumbing.png" alt="Logo" width="200" height="200">
            </a>
        </div>
        <!-- HAMBURGER BUTTON VISIBLE ONLY ON MOBILE -->
-        <btn class="hamburger hamburger--stand lg:hidden" type="button" id="hamburger_toggle">
+        <btn class="hamburger hamburger--arrowalt lg:hidden text-white" type="button" id="hamburger_toggle">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
         </btn>
     
      <!-- MENU ITEMS (HIDDEN ON MOBILE, VISIBLE ON DESKTOP) -->
-                <div class="hidden lg:flex items-center gap-10 ml-auto mr-10 font-montserrat-light text-gray-500 text-base">
+                <div class="hidden lg:flex items-center gap-10 ml-auto mr-10 font-montserrat-light text-yellow text-base">
                   <ul class="flex items-center uppercase space-x-6">
                     <li class="menu-items hover:text-green transition-colors duration-200">
                       <a href="/">Home</a>
                     </li>
-                    <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="about-us.html">About</a>
+                    <li class="menu-items transition-colors duration-200">
+                      <a href="/#services">Services</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="/services.html">Services</a>
+                      <a href="/#about">About</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="/our-team.html">References</a>
+                      <a href="/#testimonials">Testimonials</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="/responsible-investing.html">Promotions</a>
+                      <a href="/#gallery">Gallery</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="/insights.html">Insights</a>
-                    </li>
-                    <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="/contact.html">Contact</a>
+                      <a href="/#contact">Contact</a>
                     </li>
                   
                   </ul>
@@ -68,26 +64,23 @@
               <!-- MOBILE MENU (HIDDEN BY DEFAULT) -->
               <div id="mobile_menu" class="w-full space-y-20 font-semibold font-montserrat-light text-lg z-10 text-black text-center py-6 pl-5 bg-white top-20 hidden">
               <ul class="space-y-8">
-                     <li class="menu-items hover:text-green transition-colors duration-200">
+                  <li class="menu-items hover:text-green transition-colors duration-200">
                       <a href="/">Home</a>
                     </li>
-                    <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="about-us.html">About</a>
+                    <li class="menu-items transition-colors duration-200">
+                      <a href="/#services">Services</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="/services.html">Services</a>
+                      <a href="/#about">About</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="/our-team.html">References</a>
+                      <a href="/#testimonials">Testimonials</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="/responsible-investing.html">Promotions</a>
+                      <a href="/#gallery">Gallery</a>
                     </li>
                     <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="/insights.html">Insights</a>
-                    </li>
-                    <li class="menu-items hover:text-green transition-colors duration-200">
-                      <a href="/contact.html">Contact</a>
+                      <a href="/#contact">Contact</a>
                     </li>
           </ul>
     </div>
@@ -103,7 +96,7 @@
      <!-- Darker Overlay Background -->
     <div class="absolute inset-0 bg-black opacity-70"></div> <!-- Darker overlay -->
     <!-- Text Content -->
-    <div class="absolute inset-0 flex flex-col items-center justify-center text-blue-900 text-center px-4">
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-blue-900 text-center px-6">
       <h1 class="text-white text-3xl md:text-4xl leading-10 font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, a.</h1>
       <div class="py-5">
     <button class="learn-more"><span class="circle" aria-hidden="true"><span class="icon arrow"></span>
@@ -117,7 +110,7 @@
      <!-- Darker Overlay Background -->
     <div class="absolute inset-0 bg-black opacity-70"></div> <!-- Darker overlay -->
     <!-- Text Content -->
-    <div class="absolute inset-0 flex flex-col items-center justify-center text-blue-900 text-center px-4">
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-blue-900 text-center px-6">
       <h1 class="text-white text-3xl md:text-4xl leading-10 font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius vero minima.</h1>
       <div class="py-5">
     <button class="learn-more"><span class="circle" aria-hidden="true"><span class="icon arrow"></span>
@@ -127,108 +120,223 @@
 </div>
     </div>
   </div>
-  
 </div>
-<!-- MOBILE SLIDER -->
-<div id="homeCarousel" class="home-carousel block md:hidden" data-flickity='{ "wrapAround": true, "autoPlay": 1500, "pauseAutoPlayOnHover": false, "prevNextButtons": false }'>
-  <div class="home-carousel-cell">
-    <img src="images/plumbing-desktop-banner.jpg" class="w-full h-[650px] object-cover" alt="banner-1">
-  </div>
-  <div class="home-carousel-cell">
-    <img src="images/plumbinng-desktop-banner-2.jpg" class="w-full h-[650px] object-cover" alt="banner-2">
-  </div>
-</div>
- </div>
  </section>
 
-<!-- About Section Redesign -->
-<section class="py-20">
-  <div class="w-[98%] mx-auto">
-   <div class="about-heading"><h2 class="text-4xl text-center uppercase font-bold text-gray-400">About</h2></div> 
-   <div class="about-copy px-8 lg:px-20">
-    <p class="text-base text-center pt-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illo et fugit, consequatur quisquam nobis necessitatibus aspernatur harum cumque soluta neque optio placeat perspiciatis sit ea sint voluptas enim officiis delectus itaque nisi quos. Saepe dicta harum non amet ut.</p>
-  <button class="read-more-button flex mx-auto mt-3 mb-9">
-       Read More<div class="arrow-wrapper"><div class="arrow"></div></div>
-</button>
-  </div> 
-    
-   <div class="about-circles flex flex-row justify-evenly items-center flex-wrap w-full gap-12">
-      <div class="free-quote">
-        <a href="#"><img src="images/freequote.svg" alt="Quote" class="scale-110 transition-all duration-300 hover:scale-100 w-48 h-48"></a> 
-      </div>
-      <div class="24hr-emergency">
-        <a href="#"><img src="images/24hr_emergency_service.svg" alt="24HR Emergency" class="scale-110 transition-all duration-300 hover:scale-100 w-48 h-48"></a> 
-      </div>
-     <div class="accredited">
-      <a href="#"><img src="images/accredited.svg" alt="Accredited" class="scale-110 transition-all duration-300 hover:scale-100 w-48 h-48"></a>
+<!-- SERVICES SECTION-->
+<section class="py-20 bg-gray-50" id="services">
+  <div class="w-[95%] max-w-7xl mx-auto">
+
+    <!-- Heading -->
+    <div class="text-center mb-16">
+     <h2 class="text-4xl font-bold uppercase text-gray-900">Our Services</h2>
+
+<p class="text-gray-500 mt-4 max-w-5xl mx-auto">
+  Reliable, fast, and professional plumbing solutions tailored to your needs. 
+  We specialize in emergency repairs, installations, and maintenance for homes and businesses, 
+  ensuring quality workmanship and quick response times when you need it most.
+</p>
     </div>
+
+    <!-- Services Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Service Card -->
+      <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 group">
+        <div class="mb-6">
+          <img src="images/bathroom-renovations.jpg" class="w-14 mb-4 group-hover:scale-110 transition">
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Bathroom Renovations</h3>
+        <p class="text-gray-500 text-sm">
+          Quick detection and repair of water leaks to prevent damage and save costs.
+        </p>
+      </div>
+
+      <!-- Service Card -->
+      <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 group">
+        <div class="mb-6">
+          <img src="images/drain.svg" class="w-14 mb-4 group-hover:scale-110 transition">
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Blocked Drains</h3>
+        <p class="text-gray-500 text-sm">
+          Fast and effective drain cleaning to restore proper water flow in your home.
+        </p>
+      </div>
+
+      <!-- Service Card -->
+      <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 group">
+        <div class="mb-6">
+          <img src="images/geyser.svg" class="w-14 mb-4 group-hover:scale-110 transition">
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Geyser Installation</h3>
+        <p class="text-gray-500 text-sm">
+          Professional installation and repair of geysers for reliable hot water.
+        </p>
+      </div>
+
+      <!-- Service Card -->
+      <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 group">
+        <div class="mb-6">
+          <img src="images/bathroom.svg" class="w-14 mb-4 group-hover:scale-110 transition">
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Bathroom Plumbing</h3>
+        <p class="text-gray-500 text-sm">
+          From installations to repairs, we handle all bathroom plumbing needs.
+        </p>
+      </div>
+
+      <!-- Service Card -->
+      <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 group">
+        <div class="mb-6">
+          <img src="images/kitchen.svg" class="w-14 mb-4 group-hover:scale-110 transition">
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Kitchen Plumbing</h3>
+        <p class="text-gray-500 text-sm">
+          Fixing sinks, pipes and appliances to keep your kitchen running smoothly.
+        </p>
+      </div>
+
+      <!-- Service Card -->
+      <div class="bg-blue-600 text-white p-8 rounded-2xl shadow-xl flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-semibold mb-3">24/7 Emergency</h3>
+          <p class="text-sm text-blue-100">
+            Plumbing emergency? We’re available anytime, day or night.
+          </p>
+        </div>
+        <a href="#" class="mt-6 inline-block bg-white text-blue-600 px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition">
+          Call Now
+        </a>
+      </div>
+
     </div>
+
+  </div>
+</section>
+<section class="py-16 bg-black">
+  <div class="w-[95%] max-w-5xl mx-auto text-center">
+
+    <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+      Reliable Plumbing Services in Your Area
+    </h3>
+
+    <p class="text-gray-600 leading-relaxed">
+      We provide professional plumbing services including leak repairs, blocked drains, geyser installations, and emergency plumbing support.
+      Our team is committed to fast response times, quality workmanship, and affordable pricing for homeowners and businesses.
+    </p>
+
+    <p class="text-gray-600 leading-relaxed mt-4">
+      Whether you need urgent plumbing assistance or scheduled maintenance, our experienced plumbers are ready to help.
+      We proudly serve residential and commercial clients with reliable solutions that last.
+    </p>
+
   </div>
 </section>
 
-<!-- About Background Banner -->
- <section>
-   <div class="about-banner bg-no-repeat bg-cover bg-center w-full h-[500px]" style="background-image:url('/images/about-bottom-banner.jpg')"></div>
-  </section>
+<!-- ABOUT SECTION -->
+ <section id="about" class="py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
-  <!-- Services GRID -->
-   <section class="bg-gray-100 py-20">
-    <div class="w-[98%] mx-auto px-12 lg:px-24">
-   <div class="about-heading">
-    <h2 class="text-4xl text-center uppercase font-bold text-gray-400 pb-10">Services</h2></div> 
-   
-    <div class="service-circles flex flex-wrap items-center justify-evenly flex-row w-full gap-12">
-      <div class="free-quote">
-        <a href="#"><img src="images/freequote.svg" alt="Quote" class="scale-110 transition-all duration-300 hover:scale-100 w-48 h-48"></a> 
-      </div>
-      <div class="24hr-emergency">
-        <a href="#"><img src="images/24hr_emergency_service.svg" alt="24HR Emergency" class="scale-110 transition-all duration-300 hover:scale-100 w-48 h-48"></a> 
-      </div>
-      <div class="24hr-emergency">
-        <a href="#"><img src="images/24hr_emergency_service.svg" alt="24HR Emergency" class="scale-110 transition-all duration-300 hover:scale-100 w-48 h-48"></a> 
-      </div>
-     <div class="accredited">
-      <a href="#"><img src="images/accredited.svg" alt="Accredited" class="scale-110 transition-all duration-300 hover:scale-100 w-48 h-48"></a>
+    <!-- Top Heading -->
+    <div class="max-w-3xl mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 mb-6 uppercase">
+        Reliable Plumbing You Can Trust
+      </h2>
+      <p class="text-gray-600 leading-relaxed">
+        We deliver high-quality plumbing services with a focus on speed, reliability, and customer satisfaction. 
+        From emergency repairs to full installations, we make sure the job is done right the first time.
+      </p>
     </div>
-     <div class="accredited">
-      <a href="#"><img src="images/accredited.svg" alt="Accredited" class="scale-110 transition-all duration-300 hover:scale-100 w-48 h-48"></a>
+
+    <!-- Content Grid -->
+    <div class="grid lg:grid-cols-3 gap-10 items-stretch">
+
+      <!-- Left Image -->
+      <div class="lg:col-span-2 relative">
+        <img src="images/plumber-about.jpg" 
+             class="rounded-3xl w-full h-[420px] object-cover shadow-xl">
+
+        <!-- Overlay Card -->
+        <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md p-6 rounded-xl shadow-lg max-w-xs">
+          <p class="text-lg font-semibold text-gray-800">Fast. Reliable. Professional.</p>
+          <p class="text-sm text-gray-500 mt-2">
+            We pride ourselves on quick response times and quality workmanship.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Stats / Features -->
+      <div class="flex flex-col justify-between gap-6">
+
+        <!-- Stat -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-3xl font-bold text-blue-600">10+</h3>
+          <p class="text-gray-600 text-sm mt-2">Years of Experience</p>
+        </div>
+
+        <!-- Stat -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-3xl font-bold text-blue-600">500+</h3>
+          <p class="text-gray-600 text-sm mt-2">Jobs Completed</p>
+        </div>
+
+        <!-- Stat -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-3xl font-bold text-blue-600">24/7</h3>
+          <p class="text-gray-600 text-sm mt-2">Emergency Availability</p>
+        </div>
+
+      </div>
+
     </div>
+
+    <!-- Bottom CTA -->
+    <div class="mt-16 flex flex-col md:flex-row items-center justify-between bg-blue-600 text-white p-8 rounded-2xl shadow-xl">
+      <div>
+        <h3 class="text-xl font-semibold">Need a plumber right now?</h3>
+        <p class="text-blue-100 text-sm mt-1">We’re ready to help anytime.</p>
+      </div>
+
+      <a href="#contact" class="mt-4 md:mt-0 bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+        Contact Us
+      </a>
     </div>
+
   </div>
-   </section>
+</section>
 
-<!--Services Background Banner -->
+<!--About Background Banner -->
  <section>
    <div class="services-banner bg-no-repeat bg-cover bg-center w-full h-[500px]" style="background-image:url('/images/services-background-banner.jpg')"></div>
   </section>
 
-  <!-- References Section -->
-<section class="py-20">
+  <!-- Testimonials Section -->
+<section id="testimonials" class="py-20">
   <div class="w-[98%] mx-auto">
-   <div class="reference-heading"><h2 class="text-4xl text-center uppercase font-bold text-gray-400">References</h2></div> 
+   <div class="reference-heading"><h2 class="text-4xl text-center uppercase font-bold text-gray-400">Testimonials</h2></div> 
    <div class="reference-carousel px-10 pt-5 lg:px-24" data-flickity='{ "groupCells": 1, "autoPlay": true, "wrapAround": true }'>
 
-  <div class="reference-carousel-cell w-96 min-h-[600px] py-10 flex flex-col justify-start">
+  <div class="reference-carousel-cell w-96 min-h-[300px] py-10 flex flex-col justify-start">
     <h2 class="text-center text-xl text-white">John Doe</h2>
-    <p class="text-base px-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. Vel nemo distinctio dignissimos voluptatibus deserunt! Provident optio praesentium nostrum libero eos atque, adipisci at suscipit quidem quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt!quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt! </p>
+    <p class="text-base px-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae  </p>
   </div>
 
-  <div class="reference-carousel-cell w-96 min-h-[600px] py-10 flex flex-col justify-start">
+  <div class="reference-carousel-cell w-96 min-h-[300px] py-10 flex flex-col justify-start">
     <h2 class="text-center text-xl text-white">John Doe</h2>
-    <p class="text-base px-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. Vel nemo distinctio dignissimos voluptatibus deserunt! Provident optio praesentium nostrum libero eos atque, adipisci at suscipit quidem quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt!quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt! </p>
+    <p class="text-base px-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. Vel nemo distinctio dignissimos voluptatibus deserunt! Provident optio praesentium </p>
   </div>
 
-  <div class="reference-carousel-cell w-96 min-h-[600px] py-10 flex flex-col justify-start">
+  <div class="reference-carousel-cell w-96 min-h-[300px] py-10 flex flex-col justify-start">
     <h2 class="text-center text-xl text-white">John Doe</h2>
-    <p class="text-base px-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. Vel nemo distinctio dignissimos voluptatibus deserunt! Provident optio praesentium nostrum libero eos atque, adipisci at suscipit quidem quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt!quibusdam architecto blanditiis mollitia minus explicabo fugit impedit </p>
+    <p class="text-base px-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. Vel nemo distinctio dignissimos voluptatibus deserunt! Provident optio praesentium nostrum libero eos atque, adipisci at suscipit quidem quibusdam architecto </p>
   </div>
 
-  <div class="reference-carousel-cell w-96 min-h-[600px] py-10 flex flex-col justify-start">
+  <div class="reference-carousel-cell w-96 min-h-[300px] py-10 flex flex-col justify-start">
     <h2 class="text-center text-xl text-white">John Doe</h2>
-    <p class="text-base px-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. Vel nemo distinctio dignissimos voluptatibus deserunt! Provident optio praesentium nostrum libero eos atque, adipisci at suscipit quidem quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt!quibusdam architecto blanditiis mollitia minus explicabo fugit impedit nobis dignissimos corporis maxime ad asperiores minima officia sunt! </p>
+    <p class="text-base px-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. Vel nemo distinctio dignissimos voluptatibus deserunt! Provident optio  </p>
   </div>
 
-  <div class="reference-carousel-cell w-96 min-h-[600px] py-10 flex flex-col justify-start">
+  <div class="reference-carousel-cell w-96 min-h-[300px] py-10 flex flex-col justify-start">
     <h2 class="text-center text-xl text-white">John Doe</h2>
     <p class="text-base px-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur in accusantium delectus magni molestiae consequatur dicta. </p>
   </div>
@@ -251,7 +359,7 @@
         <img src="images/reference-banner.jpg" alt="" class="max-w-full max-h-full object-cover rounded-md shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400">
       </div>
       <div class="copy-section flex flex-col justify-center order-1 md:order-2">
-        <h2 class="text-4xl text-blue pb-3">Lorem ipsum dolor sit.</h2>
+        <h2 class="text-4xl text-gray-400 pb-3">Lorem ipsum dolor sit.</h2>
         <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quae labore provident ex voluptas soluta ratione voluptatibus, ipsam et dolorum cumque harum distinctio! Veritatis porro cumque aspernatur, impedit, quasi possimus alias nihil exercitationem itaque magnam, natus vitae nulla illum mollitia!</p>
         <button class="animated-button w-36 my-4"><span>Read More</span><span></span></button>
       </div>
@@ -259,76 +367,207 @@
   </div>
 </section>
 
-  <!-- News Section -->
-<section>
-  <div class="w-[98%] mx-auto">
-   <div class="about-heading">
-    <h2 class="text-4xl text-center uppercase font-bold text-gray-400">News</h2>
-  </div> 
-   <div class="grid grid-cols-1 md:grid-cols-2 gap-10 py-10 px-5 lg:px-16 justify-items-center">
+<!-- GALLERY -->
+ <section id="gallery" class="py-24 bg-white">
+  <div class="w-[95%] max-w-7xl mx-auto">
 
-    <div class="col-1 flex flex-wrap md:flex-nowrap items-center justify-center gap-8">
-      <div class="news-image flex items-center justify-center w-full md:w-48 h-48">
-        <img src="images/get-in-touch.jpg" alt="" class="max-w-full max-h-full object-cover">
-      </div>
-      <div class="news-copy">
-        <h3 class="text-xl">News-1</h3>
-        <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eius.</p>
-        <div class="button">
-          <button class="btn"> Read More</button>
-        </div>
-      </div>
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 uppercase">Our Work</h2>
+      <p class="text-gray-500 mt-4 max-w-2xl mx-auto">
+        Take a look at some of our recent plumbing projects and completed work.
+      </p>
     </div>
 
-        <div class="col-2 flex flex-wrap md:flex-nowrap items-center justify-center gap-8">
-      <div class="news-image flex items-center justify-center w-full md:w-48 h-48">
-        <img src="images/get-in-touch.jpg" alt="" class="max-w-full max-h-full object-cover">
-      </div>
-      <div class="news-copy">
-        <h3 class="text-xl">News-2</h3>
-        <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eius.</p>
-        <div class="button">
-          <button class="btn"> Read More</button>
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+
+      <!-- Image Item -->
+      <div class="relative overflow-hidden rounded-2xl group">
+        <img src="images/work1.jpg" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+          <p class="text-white text-sm font-semibold">Leak Repair</p>
         </div>
       </div>
+
+      <!-- Image Item -->
+      <div class="relative overflow-hidden rounded-2xl group">
+        <img src="images/work2.jpg" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+          <p class="text-white text-sm font-semibold">Blocked Drain</p>
+        </div>
+      </div>
+
+      <!-- Image Item -->
+      <div class="relative overflow-hidden rounded-2xl group">
+        <img src="images/work3.jpg" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+          <p class="text-white text-sm font-semibold">Geyser Installation</p>
+        </div>
+      </div>
+
+      <!-- Image Item -->
+      <div class="relative overflow-hidden rounded-2xl group">
+        <img src="images/work4.jpg" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+          <p class="text-white text-sm font-semibold">Bathroom Plumbing</p>
+        </div>
+      </div>
+
+      <!-- Image Item -->
+      <div class="relative overflow-hidden rounded-2xl group">
+        <img src="images/work5.jpg" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+          <p class="text-white text-sm font-semibold">Kitchen Fix</p>
+        </div>
+      </div>
+
+      <!-- Image Item -->
+      <div class="relative overflow-hidden rounded-2xl group">
+        <img src="images/work6.jpg" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+          <p class="text-white text-sm font-semibold">Pipe Installation</p>
+        </div>
+      </div>
+
     </div>
 
-    <div class="col-1 flex flex-wrap md:flex-nowrap items-center justify-center gap-8">
-      <div class="news-image flex items-center justify-center w-full md:w-48 h-48">
-        <img src="images/get-in-touch.jpg" alt="" class="max-w-full max-h-full object-cover">
-      </div>
-      <div class="news-copy">
-        <h3 class="text-xl">News-3</h3>
-        <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eius.</p>
-        <div class="button">
-          <button class="btn font-montserrat-light"> Read More</button>
+    <div class="text-center mt-12">
+  <button onclick="toggleGallery()" class="bg-blue-600 text-black px-6 py-3 rounded-full hover:bg-blue-700 transition">
+    View More Work
+  </button>
+</div>
+
+<!-- Hidden Gallery -->
+<div id="moreGallery" class="hidden mt-10 grid grid-cols-2 md:grid-cols-3 gap-6">
+  <div class="relative overflow-hidden rounded-2xl group">
+        <img src="images/work6.jpg" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+          <p class="text-white text-sm font-semibold">Pipe Installation</p>
         </div>
       </div>
+  <div class="relative overflow-hidden rounded-2xl group">
+        <img src="images/work6.jpg" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+          <p class="text-white text-sm font-semibold">Pipe Installation</p>
+        </div>
+      </div>
+  <div class="relative overflow-hidden rounded-2xl group">
+        <img src="images/work6.jpg" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+          <p class="text-white text-sm font-semibold">Pipe Installation</p>
+        </div>
+      </div>
+</div>
+
+<script>
+function toggleGallery() {
+  const gallery = document.getElementById('moreGallery');
+  gallery.classList.toggle('hidden');
+}
+</script>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+ <section id="contact" class="py-24 bg-gray-50">
+  <div class="w-[95%] max-w-7xl mx-auto">
+
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 uppercase">Contact Us</h2>
+      <p class="text-gray-500 mt-4 max-w-2xl mx-auto">
+        Need urgent plumbing help? Get in touch with us anytime — we respond fast.
+      </p>
     </div>
 
-    
-        <div class="col-2 flex flex-wrap md:flex-nowrap items-center justify-center gap-8">
-      <div class="news-image flex items-center justify-center w-full md:w-48 h-48">
-        <img src="images/get-in-touch.jpg" alt="" class="max-w-full max-h-full object-cover">
-      </div>
-      <div class="news-copy">
-        <h3 class="text-xl">News-4</h3>
-        <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eius.</p>
-        <div class="button">
-          <button class="btn"> Read More</button>
+    <div class="grid lg:grid-cols-2 gap-12">
+
+      <!-- Contact Info -->
+      <div class="bg-white p-8 rounded-2xl shadow-md">
+        <h3 class="text-2xl font-semibold mb-6">Get In Touch</h3>
+
+        <div class="space-y-6 text-gray-600">
+
+          <div>
+            <p class="font-semibold text-gray-800">Phone</p>
+            <p>+27 000 000 000</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-gray-800">WhatsApp</p>
+            <p>+27 000 000 000</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-gray-800">Email</p>
+            <p>info@plumbingcompany.co.za</p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-gray-800">Service Area</p>
+            <p>Your City & Surrounding Areas</p>
+          </div>
+
         </div>
+
+        <!-- WhatsApp CTA -->
+        <a href="https://wa.me/27000000000"
+           class="mt-8 inline-block bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition">
+          Chat on WhatsApp
+        </a>
       </div>
+
+      <!-- Dummy Form -->
+      <div class="bg-white p-8 rounded-2xl shadow-md">
+        <h3 class="text-2xl font-semibold mb-6">Request a Call Back</h3>
+
+        <form class="space-y-5">
+
+          <input type="text" placeholder="Your Name"
+                 class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+          <input type="email" placeholder="Your Email"
+                 class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+          <input type="text" placeholder="Phone Number"
+                 class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+          <textarea rows="5" placeholder="Describe your plumbing issue..."
+                    class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+
+          <button type="button"
+                  class="w-full bg-blue-600 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 transition">
+            Send Request
+          </button>
+
+        </form>
+
+        <p class="text-xs text-gray-400 mt-4 text-center">
+          *This form is for demo purposes — will be connected to backend/form plugin.
+        </p>
+      </div>
+
     </div>
-        
-   </div>
+
   </div>
 </section>
 
 
    <!-- COPYRIGHT FOOTER -->
-<section class="bottom-footer bg-darkGray text-white h-[80px] flex justify-center items-center">
+<section class="bottom-footer bg-black text-white h-[80px] flex justify-center items-center">
   <div class="bottom-text text-center font-montserrat-extra-light text-[12px]">
-  &copy; Plumbing It Fine 2025 | Website Designed By <a href="https://powerof9.co.za" target="_blank" class="hover:underline">Power of 9</a> 
+  &copy; Ray Von Plumbing | Website Designed By <a href="https://elntech.co.za" target="_blank" class="hover:underline">ELNTECH</a> 
   </div>
 </section>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
