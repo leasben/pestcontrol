@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="/src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <title>Ray Von Plumbing - Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <title>Home - Rayvon Plumbing</title>
   </head>
   <body>
     
@@ -87,41 +90,57 @@
     </nav>
     </section>
 
+<!-- HOME SLIDER -->
+ <section class="relative">
 <!-- HOME SLIDER SECTION -->
- <section class="home-slider">
- <div class="home-slider">
-  <div id="homeCarousel" class="home-carousel hidden md:block relative" data-flickity='{ "wrapAround": true, "autoPlay": 2000, "pauseOnHover": true, "prevNextButtons": false }'>
-  <div class="home-carousel-cell flex items-center justify-center w-full h-[650px]">
-    <img src="images/plumbing-desktop-banner.jpg" alt="banner" class="w-full h-[650px] lg:h-[780px] object-cover">
-     <!-- Darker Overlay Background -->
-    <div class="absolute inset-0 bg-black opacity-70"></div> <!-- Darker overlay -->
-    <!-- Text Content -->
-    <div class="absolute inset-0 flex flex-col items-center justify-center text-blue-900 text-center px-6">
-      <h1 class="text-white text-3xl md:text-4xl leading-10 font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, a.</h1>
-      <div class="py-5">
-    <button class="learn-more"><span class="circle" aria-hidden="true"><span class="icon arrow"></span>
-  </span><span class="button-text">Learn More</span>
-  </button>
-  </div>
-</div>
+<div class="carousel" data-flickity='{ "autoPlay": 2000, "wrapAround": true, "pageDots": false, "prevNextButtons": true, "contain": true }'>
+
+ <div class="carousel-cell relative w-full h-[380px] md:h-[530px] lg:h-[580px]">
+  <img src="images/plumbing-desktop-banner.jpg" alt="School banner" loading="lazy"
+       class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/50"></div>
+  <div class="relative z-10 h-full flex items-center justify-center px-6 uppercase">
+    <div class="text-white max-w-6xl text-center mx-auto">
+      <h1 class="text-2xl md:text-5xl font-bold mb-3">Reliable Plumbing You Can Count On</h1>
+      <p class="mb-4 text-base md:text-xl px-5">Fast, professional service for repairs, installations, and emergencies—done right the first time.</p>
+      <div class="flex-col md:flex-row flex items-center justify-center uppercase px-10">
+        <a href="#">
+         <button class="button">
+  <div class="blob1"></div>
+  <div class="blob2"></div>
+  <div class="inner uppercase">get a quote</div>
+</button>
+        </a>
     </div>
-  <div class="home-carousel-cell flex items-center justify-center w-full h-[650px]">
-    <img src="images/plumbinng-desktop-banner-2.jpg" alt="banner" class="max-w-full max-h-full object-cover">
-     <!-- Darker Overlay Background -->
-    <div class="absolute inset-0 bg-black opacity-70"></div> <!-- Darker overlay -->
-    <!-- Text Content -->
-    <div class="absolute inset-0 flex flex-col items-center justify-center text-blue-900 text-center px-6">
-      <h1 class="text-white text-3xl md:text-4xl leading-10 font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius vero minima.</h1>
-      <div class="py-5">
-    <button class="learn-more"><span class="circle" aria-hidden="true"><span class="icon arrow"></span>
-  </span><span class="button-text">Get in Touch</span>
-  </button>
+      </div>
+     
   </div>
-</div>
+  </div>
+  <!-- slider-2 -->
+ 
+<div class="carousel-cell relative w-full h-[380px] md:h-[530px] lg:h-[580px]">
+  <img src="images/plumbinng-desktop-banner-2.jpg" alt="School banner" loading="lazy"
+       class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/50"></div>
+  <div class="relative z-10 h-full flex items-center justify-center px-6 uppercase">
+    <div class="text-white max-w-6xl text-center mx-auto">
+      <h1 class="text-2xl md:text-5xl font-bold mb-3">Expert Plumbing Solutions for Every Home</h1>
+       <p class="mb-4 text-base md:text-xl px-5">From leaking taps to full system upgrades, we keep your water flowing smoothly.</p>
+      <div class="flex-col md:flex-row flex items-center justify-center gap-6 uppercase px-10">
+         <a href="#">
+         <button class="button">
+  <div class="blob1"></div>
+  <div class="blob2"></div>
+  <div class="inner uppercase">get in touch</div>
+</button>
+        </a>
     </div>
+      </div>
+     
   </div>
+  </div> 
 </div>
- </section>
+</section>
 
 <!-- SERVICES SECTION-->
 <section class="py-20 bg-gray-50" id="services">
@@ -144,7 +163,7 @@
       <!-- Service Card -->
       <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 group">
         <div class="mb-6">
-          <img src="images/bathroom-renovations.jpg" class="w-14 mb-4 group-hover:scale-110 transition">
+          <img src="images/bathroom-renovations.jpg" class="w-24 mb-4 group-hover:scale-110 transition">
         </div>
         <h3 class="text-xl font-semibold mb-3">Bathroom Renovations</h3>
         <p class="text-gray-500 text-sm">
@@ -157,7 +176,7 @@
         <div class="mb-6">
           <img src="images/drain.svg" class="w-14 mb-4 group-hover:scale-110 transition">
         </div>
-        <h3 class="text-xl font-semibold mb-3">Blocked Drains</h3>
+        <h3 class="text-xl font-semibold mb-3">Leak Finding</h3>
         <p class="text-gray-500 text-sm">
           Fast and effective drain cleaning to restore proper water flow in your home.
         </p>
@@ -197,14 +216,14 @@
       </div>
 
       <!-- Service Card -->
-      <div class="bg-blue-600 text-white p-8 rounded-2xl shadow-xl flex flex-col justify-between">
+      <div class="bg-blue-600 contct-bg p-8 rounded-2xl shadow-xl flex flex-col justify-between">
         <div>
           <h3 class="text-xl font-semibold mb-3">24/7 Emergency</h3>
           <p class="text-sm text-blue-100">
             Plumbing emergency? We’re available anytime, day or night.
           </p>
         </div>
-        <a href="#" class="mt-6 inline-block bg-white text-blue-600 px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition">
+        <a href="#" class="mt-6 inline-block bg-black text-blue-600 px-6 py-2 rounded-full text-sm text-white font-semibold hover:bg-gray-100 transition">
           Call Now
         </a>
       </div>
@@ -213,7 +232,7 @@
 
   </div>
 </section>
-<section class="py-16 bg-black">
+<section class="py-16 yellow-bg">
   <div class="w-[95%] max-w-5xl mx-auto text-center">
 
     <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
@@ -234,12 +253,12 @@
 </section>
 
 <!-- ABOUT SECTION -->
- <section id="about" class="py-24 bg-gray-50">
+ <section id="about" class="py-24 bg-gray-100">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
     <!-- Top Heading -->
     <div class="max-w-3xl mb-16">
-      <h2 class="text-4xl font-bold text-gray-900 mb-6 uppercase">
+      <h2 class="text-4xl text-center md:text-left font-bold text-gray-900 mb-6 uppercase">
         Reliable Plumbing You Can Trust
       </h2>
       <p class="text-gray-600 leading-relaxed">
@@ -253,11 +272,11 @@
 
       <!-- Left Image -->
       <div class="lg:col-span-2 relative">
-        <img src="images/plumber-about.jpg" 
+        <img src="images/solar.jpg" 
              class="rounded-3xl w-full h-[420px] object-cover shadow-xl">
 
         <!-- Overlay Card -->
-        <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md p-6 rounded-xl shadow-lg max-w-xs">
+        <div class="absolute bottom-6 left-6 yellow-bg backdrop-blur-md p-6 rounded-xl shadow-lg max-w-xs">
           <p class="text-lg font-semibold text-gray-800">Fast. Reliable. Professional.</p>
           <p class="text-sm text-gray-500 mt-2">
             We pride ourselves on quick response times and quality workmanship.
@@ -291,13 +310,13 @@
     </div>
 
     <!-- Bottom CTA -->
-    <div class="mt-16 flex flex-col md:flex-row items-center justify-between bg-blue-600 text-white p-8 rounded-2xl shadow-xl">
+    <div class="mt-16 flex flex-col md:flex-row items-center justify-between bg-blue-600 text-white p-8 rounded-2xl shadow-xl black-bg">
       <div>
         <h3 class="text-xl font-semibold">Need a plumber right now?</h3>
         <p class="text-blue-100 text-sm mt-1">We’re ready to help anytime.</p>
       </div>
 
-      <a href="#contact" class="mt-4 md:mt-0 bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+      <a href="#contact" class="mt-4 md:mt-0 bg-yellow text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
         Contact Us
       </a>
     </div>
@@ -307,13 +326,13 @@
 
 <!--About Background Banner -->
  <section>
-   <div class="services-banner bg-no-repeat bg-cover bg-center w-full h-[500px]" style="background-image:url('/images/services-background-banner.jpg')"></div>
+   <div class="services-banner bg-no-repeat bg-cover bg-center w-full h-[500px]" style="background-image:url('/images/plumbing-desktop-banner.jpg')"></div>
   </section>
 
   <!-- Testimonials Section -->
 <section id="testimonials" class="py-20">
   <div class="w-[98%] mx-auto">
-   <div class="reference-heading"><h2 class="text-4xl text-center uppercase font-bold text-gray-400">Testimonials</h2></div> 
+   <div class="reference-heading"><h2 class="text-4xl font-bold text-gray-900 mb-6 uppercase text-center">Testimonials</h2></div> 
    <div class="reference-carousel px-10 pt-5 lg:px-24" data-flickity='{ "groupCells": 1, "autoPlay": true, "wrapAround": true }'>
 
   <div class="reference-carousel-cell w-96 min-h-[300px] py-10 flex flex-col justify-start">
@@ -347,21 +366,26 @@
 
 <!-- Reference Banner -->
  <section>
-   <div class="about-banner bg-no-repeat bg-cover bg-center w-full h-[500px]" style="background-image:url('/images/about-bottom-banner.jpg')"></div>
+   <div class="about-banner bg-no-repeat bg-cover bg-center w-full h-[500px]" style="background-image:url('/images/plumbing-desktop-banner.jpg')"></div>
   </section>
 
-  <!-- Promotions Section -->
-<section class="py-20">
+  <!-- Why Choose us Section -->
+<section class="py-10 drop-diamonds-bg">
   <div class="w-[98%] mx-auto">
-   <div class="about-heading"><h2 class="text-4xl text-center uppercase font-bold text-gray-400 pb-3">Promotions</h2></div> 
+   <div class="about-heading"><h2 class="text-4xl font-bold text-gray-900 mb-3 uppercase text-center">Why Choose Us</h2></div> 
     <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-12 px-8 lg:px-28">
       <div class="reference-image order-2 md:order-1 w-full h-[480px] flex items-center justify-center">
-        <img src="images/reference-banner.jpg" alt="" class="max-w-full max-h-full object-cover rounded-md shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400">
+        <img src="images/home-plumbing.jpg" alt="" class="max-w-full h-[380px] shadow-xl object-cover rounded-md transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400">
       </div>
       <div class="copy-section flex flex-col justify-center order-1 md:order-2">
-        <h2 class="text-4xl text-gray-400 pb-3">Lorem ipsum dolor sit.</h2>
-        <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quae labore provident ex voluptas soluta ratione voluptatibus, ipsam et dolorum cumque harum distinctio! Veritatis porro cumque aspernatur, impedit, quasi possimus alias nihil exercitationem itaque magnam, natus vitae nulla illum mollitia!</p>
-        <button class="animated-button w-36 my-4"><span>Read More</span><span></span></button>
+        <h2 class="text-2xl text-gray-400 pb-3">We’re committed to delivering reliable, high-quality plumbing services with a focus on customer satisfaction and long-term solutions.</h2>
+        <p class="text-base font-montserrat-light">✔ Fast and reliable service when you need it most</p>
+<p class="text-base font-montserrat-light">✔ Qualified and experienced plumbers</p>
+<p class="text-base font-montserrat-light">✔ Upfront, honest pricing—no hidden costs</p>
+<p class="text-base font-montserrat-light">✔ High-quality workmanship guaranteed</p>
+<p class="text-base font-montserrat-light">✔ Emergency call-outs available</p>
+<p class="text-base font-montserrat-light">✔ Friendly, professional customer service</p>
+        <button class="quote w-[200px] my-5 text-base font-bold font-montserrat-regular uppercase px-5 py-3"><span>Get a quote</span><span></span></button>
       </div>
     </div>
   </div>
@@ -384,11 +408,7 @@
 
       <!-- Image Item -->
       <div class="relative overflow-hidden rounded-2xl group">
-        <img src="images/work1.jpg" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
-
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <p class="text-white text-sm font-semibold">Leak Repair</p>
-        </div>
+        <img src="images/pipes.jpg" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
       </div>
 
       <!-- Image Item -->
@@ -480,7 +500,7 @@ function toggleGallery() {
 </section>
 
 <!-- CONTACT -->
- <section id="contact" class="py-24 bg-gray-50">
+ <section id="contact" class="py-24 contact-bg">
   <div class="w-[95%] max-w-7xl mx-auto">
 
     <!-- Heading -->
